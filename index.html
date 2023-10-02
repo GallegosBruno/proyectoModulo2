@@ -11,7 +11,7 @@
     <header class="container-fluid">
         <div class="container d-flex align-items-center h-100 justify-content-between">
             <div id="logoBox" class="text-center  d-flex">
-                <img src="" id="mainLogo" class="align-self-center"></img>
+                <img src="./assets/logoRollingMovie.png" id="mainLogo" class="align-self-center"></img>
             </div>
             <div id="buttonPanel">
                 <a href="/index.html" class="botonNavbar text-white fs-5">LOGIN</a>
@@ -22,19 +22,63 @@
         </div>
     </header>
     <body>
-        <div id="mainBannerBox" class="d-flex position-relative">
+        <section id="mainBannerBox" class="d-flex position-relative">
             <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2tpfGVufDB8fDB8fHww&w=1000&q=80" 
             alt="Imagen de pelicula: Montañas peligrosas" id="mainBannerImg" class="position-absolute z-0">
-            
-            <container id="bannerInfo" class="position-absolute bottom-0 flex-column d-flex justify-content-end align-content-center z-1 pt-2 pb-4">
-                <h1 id="tituloBanner" class="z-1 w-100 text-center">Montañas Peligrosas</h1>
-                <h2 id="descripcionBanner" class="w-75 text-center align-self-center fs-5 z-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nulla tenetur perspiciatis eveniet minus veniam omnis sed? Deserunt ipsam aperiam magni tempore deleniti. Aliquid, voluptatibus sed nulla, nostrum fugit asperiores neque iusto ipsa modi qui laudantium! Enim laborum quisquam ipsa amet accusantium, sequi aspernatur unde deleniti dolores. Tempore provident cumque impedit vel, ratione praesentium quod tenetur, delectus illo magni eum.</h2>
-            </container>
-        </div>
+            <div class="z-1 position-absolute bottom-50 w-100 text-center" style="height: 20%;">
+                <a href="youtube.com">
+                    <img src="/assets/paginaPrincipal/play-button-icon-png-15.png" class="z-1 w-auto h-100 object-fit-scale" alt="Boton de play">
+                </a>
+                <!----<i class="fa-solid far fa-play-circle fa-8x "></i>---->
+            </div>
+            <div id="bannerInfo" class="position-absolute bottom-0 flex-column d-flex justify-content-end align-content-center z-1 pt-2 pb-4">
+                <h1 id="tituloBanner" class="z-1 w-100 text-center text-white">Montañas Peligrosas</h1>
+                <h2 id="descripcionBanner" class="w-75 text-center text-white-50 align-self-center fs-5 z-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nulla tenetur perspiciatis eveniet minus veniam omnis sed? Deserunt ipsam aperiam magni tempore deleniti. Aliquid, voluptatibus sed nulla, nostrum fugit asperiores neque iusto ipsa modi qui laudantium! Enim laborum quisquam ipsa amet accusantium, sequi aspernatur unde deleniti dolores. Tempore provident cumque impedit vel, ratione praesentium quod tenetur, delectus illo magni eum.</h2>
+            </div>
+        </section>
+        <section id="categorias">
+            <h1 class="text-white container">Categorias</h1>
+            <div class="categoryContainer">
+                <div class="carouselCustom">
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel1.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel2.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel3.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel4.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel5.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel6.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel7.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel8.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel9.jpg" alt=""></div>
+                    <div class="carouselItem"><img class="imgCarousel" src="/assets/Posters de peliculas/pel10.jpg" alt=""></div>
+                </div>
+                <h2>Ciencia Ficcion</h2>
+            </div>
+
+            <h2>Drama</h2>
+            <h3>Comedia</h3>
+        </section>
     </body>
     <footer>
-
+        <div class="container-fluid bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <div id="imgFooterContainer"><img src="/assets/logoRollingMovie.png" alt="logo RollingMovie" class="py-3 w-100 h-100 object-fit-fill"></div>
+                    </div>
+                    <div class="col-8 fs-6 text-center align-self-center"> &#169;RollingMovie+ Derechos Reservados</div>
+                    <div class="col-2 text-center d-flex align-items-center"><i class="fab fa-facebook-square fa-3x mx-1"></i>
+                        <i class="fab fab fa-instagram-square fa-3x mx-1"></i>
+                        <i class="fab fab fa-twitter-square fa-3x mx-1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+<<<<<<< HEAD
     <script src="./javascript/bootstrap.bundle.min.js"></script>
+=======
+    <script src="https://kit.fontawesome.com/0b39408f88.js" crossorigin="anonymous"></script>
+    <script src="/javascript/bootstrap.bundle.min.js"></script>
+>>>>>>> 2b1953d93950c6a018e76baa6e09d1e973388e4c
 </body>
 </html>
