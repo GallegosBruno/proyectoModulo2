@@ -35,7 +35,7 @@ const detallePelicula = () => {
                     src=${pelicula.srcImage}
                     class="w-50"
                   /></div>
-                 
+
                 </div>
               </article>`;
 };

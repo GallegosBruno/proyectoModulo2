@@ -41,6 +41,11 @@ header{height: 60px; border: 1px black solid;}
     
 }
 
+/* tamaño imagenes carrusel */
+
+.img-carrusel{
+    width:15%
+}
 
 .btn-reproducir{
 background: #802cf6;
