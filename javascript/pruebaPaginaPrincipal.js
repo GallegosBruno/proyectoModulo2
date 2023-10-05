@@ -1,13 +1,13 @@
 class Peliculas {
   constructor(
     codigo,
-    nombre,
-    destacada,
+    nstacada,
     srcImage,
     description,
     categories,
     released,
-    trailerLink
+    trailerLinkombre,
+    de
   ) {
     this.codigo = codigo;
     this.nombre = nombre;
