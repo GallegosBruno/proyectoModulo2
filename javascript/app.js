@@ -1,7 +1,11 @@
 let botonCargarPeliculas = document.getElementById("btnCargarPeliculas")
 let listaPeliculas =  JSON.parse(localStorage.getItem("arrayPeliculas")) || []
-//function cargarPeliculas(){
-    const peliculas = [
+
+//peliculas para el carrusel para que hagan click y te dirija a la pelicula detallada
+
+
+
+const peliculas = [
         {
           codigo: "01",
           nombre: "Advengers",
