@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./css/style.css" />
     <meta
       name="author"
-      content="Rocio Hernandez, Lucas Gallastegui, Sofia, Bruno y Agustina Mena"
+      content="Rocio Hernandez, Lucas Gallastegui, Sofia Azucena, Bruno Gallegos y Agustina Mena"
     />
     <meta name="description" content="Pagina Web con catalogo de peliculas" />
     <meta
       name="keywords"
-      content="Html, css, javascript, vanilla js, boostrap"
+      content="Html, Css, Javascript, Vanilla js, Boostrap"
     />
     <script
       src="https://kit.fontawesome.com/0b39408f88.js"
@@ -23,24 +23,29 @@
   </head>
   <body>
     <header class="container-fluid">
-      <div
-        class="container d-flex align-items-center h-100 justify-content-between"
-      >
-        <div id="logoBox" class="text-center d-flex">
-          <img
-            src="./assets/logoRollingMovie.png"
-            id="mainLogo"
-            class="align-self-center"
-          />
-        </div>
-        <div id="buttonPanel">
-          <a href="/index.html" class="botonNavbar text-white fs-5">LOGIN</a>
-          <a href="/index.html" class="botonNavbar text-white fs-5">REGISTRO</a>
-          <a href="/index.html" class="botonNavbar text-white fs-5">INICIO</a>
-          <a href="/index.html" class="botonNavbarOculto">qcyo</a>
-        </div>
-      </div>
-    </header>
+      <nav class="container d-flex align-items-center h-100 justify-content-between navbar navbar-dark navbar-expand-md z-3">
+          <div id="logoBox" class="text-center  d-flex">
+              <img src="./assets/logoRollingMovie.png" id="mainLogo" class="align-self-center"></img>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#buttonPanel"><span class="navbar-toggler-icon text-white"></span></button>
+          <div id="buttonPanel" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="./index.html" class="botonNavbar fs-5">LOGIN</a>
+                  </li>
+                  <li>
+                      <a href="./index.html" class="botonNavbar fs-5">REGISTRO</a>
+                  </li>
+                  <li>
+                      <a href="./index.html" class="botonNavbar fs-5">INICIO</a>
+                  </li>
+                  <li>
+                      <a href="/index.html" class="botonNavbarOculto">qcyo</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
     <section id="mainBannerBox" class="d-flex position-relative">
       <img
         src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2tpfGVufDB8fDB8fHww&w=1000&q=80"
