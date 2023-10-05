@@ -4,7 +4,7 @@ function getCodigoPeliculaFromHash() {
   return hash.substring(1);
 }
 const codigoPelicula = getCodigoPeliculaFromHash();
-console.log("Código de la película:", codigoPelicula);
+
 let listaPeliculas = JSON.parse(localStorage.getItem("arrayPeliculas")) || [];
 
 const detallePelicula = () => {
