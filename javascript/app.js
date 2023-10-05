@@ -1,7 +1,7 @@
 let botonCargarPeliculas = document.getElementById("btnCargarPeliculas")
 let listaPeliculas =  JSON.parse(localStorage.getItem("arrayPeliculas")) || []
 
-//peliculas para el carrusel para que hagan click y te dirija a la pelicula detallada
+//peliculas para del carrusel para que hagan click y te dirija a la pelicula detallada
 
 
 
