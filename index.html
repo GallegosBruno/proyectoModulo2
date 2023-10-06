@@ -59,161 +59,165 @@
         </div>
       </nav>
     </header>
-    <section id="mainBannerBox" class="d-flex position-relative">
-      <img
-        src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2tpfGVufDB8fDB8fHww&w=1000&q=80"
-        alt="Imagen de pelicula: Montañas peligrosas"
-        id="mainBannerImg"
-        class="position-absolute z-0"
-      />
-      <div
-        class="z-1 position-absolute bottom-50 w-100 text-center"
-        style="height: 20%"
-      >
-        <a href="youtube.com">
-          <img
-            src="./assets/paginaPrincipal/play-button-icon-png-15.png"
-            class="z-1 w-auto h-100 object-fit-scale"
-            alt="Boton de play"
-          />
-        </a>
-        <!----<i class="fa-solid far fa-play-circle fa-8x "></i>---->
-      </div>
-      <div
-        id="bannerInfo"
-        class="position-absolute bottom-0 flex-column d-flex justify-content-end align-content-center z-1 pt-2 pb-4"
-      >
-        <h1 id="tituloBanner" class="z-1 w-100 text-center text-white">
-          Montañas Peligrosas
-        </h1>
-        <h2
-          id="descripcionBanner"
-          class="w-75 text-center text-white-50 align-self-center fs-5 z-1"
+    <main>
+      
+      <section id="mainBannerBox" class="d-flex position-relative">
+        <img
+          src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2tpfGVufDB8fDB8fHww&w=1000&q=80"
+          alt="Imagen de pelicula: Montañas peligrosas"
+          id="mainBannerImg"
+          class="position-absolute z-0"
+        />
+        <div
+          class="z-1 position-absolute bottom-50 w-100 text-center"
+          style="height: 20%"
         >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nulla
-          tenetur perspiciatis eveniet minus veniam omnis sed? Deserunt ipsam
-          aperiam magni tempore deleniti. Aliquid, voluptatibus sed nulla,
-          nostrum fugit asperiores neque iusto ipsa modi qui laudantium! Enim
-          laborum quisquam ipsa amet accusantium, sequi aspernatur unde deleniti
-          dolores. Tempore provident cumque impedit vel, ratione praesentium
-          quod tenetur, delectus illo magni eum.
-        </h2>
-      </div>
-    </section>
+          <a href="youtube.com">
+            <img
+              src="./assets/paginaPrincipal/play-button-icon-png-15.png"
+              class="z-1 w-auto h-100 object-fit-scale"
+              alt="Boton de play"
+            />
+          </a>
+          <!----<i class="fa-solid far fa-play-circle fa-8x "></i>---->
+        </div>
+        <div
+          id="bannerInfo"
+          class="position-absolute bottom-0 flex-column d-flex justify-content-end align-content-center z-1 pt-2 pb-4"
+        >
+          <h1 id="tituloBanner" class="z-1 w-100 text-center text-white">
+            Montañas Peligrosas
+          </h1>
+          <h2
+            id="descripcionBanner"
+            class="w-75 text-center text-white-50 align-self-center fs-5 z-1"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nulla
+            tenetur perspiciatis eveniet minus veniam omnis sed? Deserunt ipsam
+            aperiam magni tempore deleniti. Aliquid, voluptatibus sed nulla,
+            nostrum fugit asperiores neque iusto ipsa modi qui laudantium! Enim
+            laborum quisquam ipsa amet accusantium, sequi aspernatur unde deleniti
+            dolores. Tempore provident cumque impedit vel, ratione praesentium
+            quod tenetur, delectus illo magni eum.
+          </h2>
+        </div>
+      </section>
+  
+      <section class="bg-violeta">
+        <article>
+          <div id="carouselAccion" class="carousel slide">
+            <div class="carousel-inner container text-center">
+              <p class="lead fs-4 text-white fw-bold pt-2">Accion</p>
+              <div class="carousel-item active" id="carouselActiveAccion"></div>
+              <div class="carousel-item" id="carruselAccion"></div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselAccion"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselAccion"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <article>
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner container text-center">
+              <p class="lead fs-4 text-white fw-bold pt-2">Ficcion</p>
+              <div class="carousel-item active" id="carouselActive"></div>
+              <div class="carousel-item" id="carrusel"></div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <article>
+          <div id="carouselRomantico" class="carousel slide">
+            <div class="carousel-inner container text-center">
+              <p class="lead fs-4 text-white fw-bold pt-2">Romantico</p>
+              <div
+                class="carousel-item active"
+                id="carouselActiveRomantico"
+              ></div>
+              <div class="carousel-item" id="carruselRomantico"></div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselRomantico"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselRomantico"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <article>
+          <div id="carouselInfantil" class="carousel slide">
+            <div class="carousel-inner container text-center">
+              <p class="lead fs-4 text-white fw-bold pt-2">Infantil</p>
+              <div class="carousel-item active" id="carouselActiveInfantil"></div>
+              <div class="carousel-item" id="carruselInfantil"></div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselInfantil"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselInfantil"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
    
-<section class="bg-violeta">
-  <article>
-    <div id="carouselAccion" class="carousel slide">
-      <div class="carousel-inner container text-center">
-        <p class="lead fs-4 text-white fw-bold pt-2">Accion</p>
-        <div class="carousel-item active" id="carouselActiveAccion"></div>
-        <div class="carousel-item" id="carruselAccion"></div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselAccion"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselAccion"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </article>
-  <article>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner container text-center">
-        <p class="lead fs-4 text-white fw-bold pt-2">Ficcion</p>
-        <div class="carousel-item active" id="carouselActive"></div>
-        <div class="carousel-item" id="carrusel"></div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  
-  </article>
-  <article>
-    <div id="carouselRomantico" class="carousel slide">
-      <div class="carousel-inner container text-center">
-        <p class="lead fs-4 text-white fw-bold pt-2">Romantico</p>
-        <div class="carousel-item active" id="carouselActiveRomantico"></div>
-        <div class="carousel-item" id="carruselRomantico"></div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselRomantico"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselRomantico"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  
-  </article>
-  <article>
-    <div id="carouselInfantil" class="carousel slide">
-      <div class="carousel-inner container text-center">
-        <p class="lead fs-4 text-white fw-bold pt-2">Infantil</p>
-        <div class="carousel-item active" id="carouselActiveInfantil"></div>
-        <div class="carousel-item" id="carruselInfantil"></div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselInfantil"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselInfantil"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </article>
-
-</section>
 
     <footer>
       <div class="container-fluid bg-secondary">

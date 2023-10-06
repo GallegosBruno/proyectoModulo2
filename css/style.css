@@ -46,6 +46,18 @@ header{height: 60px;}
     .img-carrusel{
         width:20vw
     }  
+    .btn-volver {
+        width: 50px;
+        height: 50px;
+        background: #9a35ef;
+        border-radius: 50%;
+        padding: 10px;
+        position: fixed;
+        top: 400px;
+        right: 40px;
+        z-index: 3;
+        color: aliceblue;
+      }
 }
 
 .btn-reproducir{
@@ -57,3 +69,25 @@ color: aliceblue;
     color: aliceblue
 
 }
+.btn-volver {
+    width: 70px;
+    height: 70px;
+    background:  #9a35ef;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 3;
+  }
+  .btn-volver:hover {
+    width: 70px;
+    height: 70px;
+    background:  #392855;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 3;
+  }
