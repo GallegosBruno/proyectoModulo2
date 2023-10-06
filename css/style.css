@@ -1,6 +1,7 @@
 /*{height: 60px; border: 1px black solid;}
 */
 /*navBar*/
+header{background-color: purple;}
 body{background-color: purple;}
 header{background-color: purple;}
 
@@ -33,12 +34,6 @@ header{height: 60px;}
 /*Footer*/
 #imgFooterContainer{height:60px}
 
-/* Detalle de Pelicula */
-.bg-violeta{
-    background: rgb(93,41,129);
-    background: linear-gradient(90deg, rgba(93,41,129,1) 0%, rgba(153,20,177,1) 50%);
-}
-
 /* tamaño imagenes carrusel */
 
 .img-carrusel{
@@ -65,6 +60,9 @@ header{height: 60px;}
 .btn-reproducir{
 background: #9a35ef ;
 color: aliceblue;
+}
+.btn-reproducir:hover{
+    background: #392855;;
 }
 .btn-reproducir a{
     text-decoration: none;
