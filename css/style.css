@@ -1,19 +1,36 @@
 /*{height: 60px; border: 1px black solid;}
 */
-/*navBar*/
 body{background-color: purple;}
+/*navBar*/
+header{background-color: purple;}
 #logoBox{height:80%; width: 200px;}
 #mainLogo{object-fit: scale-down; height: 100%; width: 100%;}
 header{height: 60px; border: 1px black solid;}
 .botonNavbar{width: min-content; text-decoration: none; padding: 0px 9px; color: white;}
+.botonNavbar.collapse{border: 1px solid #ccc;}
 .botonNavbar:hover{color: goldenrod;}
 .botonNavbarOculto{display: none;}
 #buttonPanel{flex-grow: 0; background-color: purple;}
-/*#buttonPanel.colapse{width: inherit;}*/
+#buttonPanel.collapse.show{
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0%; 
+  z-index: 3; 
+}
+#searchBarBox.collapse.show{
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0%; 
+  z-index: 3; 
+}
+
+
 
 /*Banner destacado*/
 #mainBannerBox{width: 100%; height: 650px; background-color: purple;}
-#mainBannerImg{object-fit: fill; width: 100%; height: 100%;}
+#mainBannerImg{object-fit: fill; width: 100%; height: 650px;}
 #bannerInfo{background-color: rgba(51, 48, 48, 0.753); height: min-content;}
 /*#tituloBanner{}
 #descripcionBanner*/
@@ -28,3 +45,8 @@ header{height: 60px; border: 1px black solid;}
 
 /*Footer*/
 #imgFooterContainer{height:60px;max-width: 320px;}
+
+/*@media screen and (max-width:595px) {
+    /*NavBar*
+    #buttonPanel.colapse{width: 100vw;position: absolute;}
+  }
