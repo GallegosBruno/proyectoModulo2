@@ -1,4 +1,3 @@
-let botonCargarPeliculas = document.getElementById("btnCargarPeliculas");
 let listaPeliculas = JSON.parse(localStorage.getItem("arrayPeliculas")) || [];
 
 const peliculas = [
