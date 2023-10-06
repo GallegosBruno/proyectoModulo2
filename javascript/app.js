@@ -272,6 +272,36 @@ const peliculas = [
     categories: "accion",
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=TQfATDZY5Y4"
+  },
+  {
+    codigo: "28",
+    nombre: "Kill Bill: Vol. 1",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/v7TaX8kXMXs5yFFGR41guUDNcnB.jpg",
+    description: "Una ex asesina a sueldo despierta de un coma y busca venganza contra sus antiguos compañeros y su ex jefe.",
+    categories: "accion",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=7kSuas6mRpk"
+  },
+  {
+    codigo: "29",
+    nombre: "Gladiator",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+    description: "Un general romano es traicionado y su familia es asesinada. Se convierte en gladiador y busca venganza contra el emperador que lo traicionó.",
+    categories: "accion",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=P5ieIbInFpg"
+  },
+  {
+    codigo: "30",
+    nombre: "The Matrix Reloaded",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/9TGHDvWrqKBzwDxDodHYXEmOE6J.jpg",
+    description: "Neo lucha contra las máquinas mientras intenta descubrir el propósito de su existencia en el mundo simulado de Matrix.",
+    categories: "accion",
+    released: true,
+    trailerLink: ""
   }
 
 ];
@@ -280,96 +310,42 @@ guardarPeliLocalStorage();
 function guardarPeliLocalStorage() {
   localStorage.setItem("arrayPeliculas", JSON.stringify(peliculas));
 }
-function crearCarrusel(){
-  let carouselActivo = document.getElementById("carouselActive");
-  let carousel = document.getElementById("carrusel");
-  for (let i = 0; i < listaPeliculas.length; i++) {
-    if (i <= 4 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase()=== "ficcion") {
-      carouselActivo.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
-    } else if (listaPeliculas[i].released && listaPeliculas[i].categories=== "ficcion") {
-      carousel.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
-    }
-  }
-}  
-function crearCarruselInfantil() {
-  let carouselActivoInfantil = document.getElementById("carouselActiveInfantil");
-  let carouselInfantil = document.getElementById("carruselInfantil");
+
+function cargarPeliculasPorCategoria(categoria, elementoActivo, elementoCarrusel) {
   let elementosAgregadosAlActivo = 0;
+
   for (let i = 0; i < listaPeliculas.length; i++) {
-    if (elementosAgregadosAlActivo < 5 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "infantil") {
-      carouselActivoInfantil.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
+    const pelicula = listaPeliculas[i];
+
+    if (
+      elementosAgregadosAlActivo < 5 &&
+      pelicula.released &&
+      pelicula.categories.toLowerCase() === categoria.toLowerCase()
+    ) {
+      elementoActivo.innerHTML += `
+        <a href="./pages/detallePelicula.html#${pelicula.codigo}">
+          <img src="${pelicula.srcImage}" class="img-carrusel m-3" alt="${pelicula.nombre}" />
+        </a>
+      `;
       elementosAgregadosAlActivo++;
-    } else if (listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "infantil") {
-      carouselInfantil.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
+    } else if (pelicula.released && pelicula.categories.toLowerCase() === categoria.toLowerCase()) {
+      elementoCarrusel.innerHTML += `
+        <a href="./pages/detallePelicula.html#${pelicula.codigo}">
+          <img src="${pelicula.srcImage}" class="img-carrusel m-3" alt="${pelicula.nombre}" />
+        </a>
+      `;
     }
   }
 }
 
-function crearCarruselRomantico() {
-  let carouselActivoRomantico = document.getElementById("carouselActiveRomantico");
-  let carouselRomantico = document.getElementById("carruselRomantico");
-  let elementosAgregadosAlActivo = 0; // Variable para rastrear elementos agregados al carrusel y
-  for (let i = 0; i < listaPeliculas.length; i++) {
-    if (elementosAgregadosAlActivo < 5 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "romantico") {
-      carouselActivoRomantico.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
-      elementosAgregadosAlActivo++;
-    } else if (listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "romantico") {
-      carouselRomantico.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
-    }
-  }
+function cargarCarruseles() {
+  cargarPeliculasPorCategoria("ficcion", document.getElementById("carouselActive"), document.getElementById("carrusel"));
+  cargarPeliculasPorCategoria("Infantil", document.getElementById("carouselActiveInfantil"), document.getElementById("carruselInfantil"));
+  cargarPeliculasPorCategoria("romantico", document.getElementById("carouselActiveRomantico"), document.getElementById("carruselRomantico"));
+  cargarPeliculasPorCategoria("accion", document.getElementById("carouselActiveAccion"), document.getElementById("carruselAccion"));
 }
 
-function crearCarruselAccion() {
-  let carouselActivoAccion = document.getElementById("carouselActiveAccion");
-  let carouselAccion = document.getElementById("carruselAccion");
-  let elementosAgregadosAlActivo = 0; // Variable para rastrear elementos agregados al carrusel y
-  for (let i = 0; i < listaPeliculas.length; i++) {
-    if (elementosAgregadosAlActivo < 5 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "accion") {
-      carouselActivoAccion.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
-      elementosAgregadosAlActivo++;
-    } else if (listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "accion") {
-      carouselAccion.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
-            src=${listaPeliculas[i].srcImage}
-            class="img-carrusel m-3"
-            alt=${listaPeliculas[i].nombre}
-          /></a>`;
-    }
-  }
-}
-
-crearCarrusel(); 
-crearCarruselInfantil();
-crearCarruselRomantico();
-crearCarruselAccion()
-
+cargarCarruseles();
 
 
 
