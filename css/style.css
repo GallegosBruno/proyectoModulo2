@@ -93,3 +93,13 @@ color: aliceblue;
     right: 100px;
     z-index: 3;
   }
+/* color de fondo error 404 */
+.bg-degradeNegro{
+    background: rgb(23,2,40);
+background: radial-gradient(circle, rgba(23,2,40,0.969625350140056) 0%, rgba(56,4,85,1) 100%);
+}
+.letraError{
+    font-family: 'Pixelify Sans', 'cursive';
+    font-size: 30vh;
+    padding: 0;
+}
