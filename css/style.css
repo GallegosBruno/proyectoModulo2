@@ -4,7 +4,7 @@
 body{background-color: purple;}
 #logoBox{height:80%; width: 200px;}
 #mainLogo{object-fit: scale-down; height: 100%; width: 100%;}
-header{height: 60px; border: 1px black solid;}
+header{height: 60px;}
 .botonNavbar{width: min-content; text-decoration: none; padding: 0px 9px; color: white;}
 .botonNavbar:hover{color: goldenrod;}
 .botonNavbarOculto{display: none;}
