@@ -1,8 +1,6 @@
 let botonCargarPeliculas = document.getElementById("btnCargarPeliculas");
 let listaPeliculas = JSON.parse(localStorage.getItem("arrayPeliculas")) || [];
 
-//peliculas para del carrusel para que hagan click y te dirija a la pelicula detallada
-
 const peliculas = [
   {
     codigo: "01",
@@ -122,63 +120,167 @@ const peliculas = [
     nombre: "La era del hielo",
     destacada: true,
     srcImage:
-      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
-    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dfp1BZF7FxbBUyzHvMOI9t8NWDD.jpg",
+    description: "Manny, Diego y Sid se embarcan en otra aventura después de que su continente se desplace. Utilizando un iceberg como barco, se encuentran con criaturas marinas y luchan contra piratas mientras exploran un nuevo mundo.",
     categories: "infantil",
     released: true,
-    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+    trailerLink: "https://www.youtube.com/watch?v=SGluiIsL3Yk",
   },
   {
     codigo: "12",
-    nombre: "La era del hielo",
+    nombre: "Frozen",
     destacada: true,
     srcImage:
-      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
-    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/kgwjIb2JDHRhNk13lmSxiClFjVk.jpg",
+    description: "La joven princesa Anna de Arendelle sueña con encontrar el verdadero amor en la coronación de su hermana Elsa. El destino la lleva en un peligroso viaje en un intento por poner fin al invierno eterno que ha caído sobre el reino. Está acompañada por el repartidor de hielo Kristoff, su reno Sven y el muñeco de nieve Olaf. En una aventura en la que descubrirá lo que realmente significan la amistad, el coraje, la familia y el amor verdadero",
     categories: "infantil",
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
   },
   {
     codigo: "13",
-    nombre: "La era del hielo",
+    nombre: "Cars",
     destacada: true,
     srcImage:
-      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
-    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/abW5AzHDaIK1n9C36VdAeOwORRA.jpg",
+    description: "Un automóvil de carreras novato y ambicioso, descubre que la vida se trata del viaje, no de la línea de meta, cuando se encuentra inesperadamente desviado en la tranquila ciudad de Radiator Springs, ubicada en la histórica Ruta 66.",
     categories: "infantil",
     released: true,
-    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+    trailerLink: "https://www.youtube.com/watch?v=SbXIj2T-_uk&t=16s",
   },
   {
-    codigo: "12",
-    nombre: "La era del hielo",
+    codigo: "14",
+    nombre: "Elemental",
     destacada: true,
     srcImage:
-      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
-    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/4Y1WNkd88JXmGfhtWR7dmDAo1T2.jpg",
+    description: "En una ciudad donde conviven residentes de fuego, agua, tierra y aire, una joven apasionada y llena de energía y un chico tranquilo y adaptable descubrirán algo fundamental",
     categories: "infantil",
     released: true,
-    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+    trailerLink: "https://www.youtube.com/watch?v=7KIWqmLsJRM",
   },
   {
-    codigo: "13",
-    nombre: "La era del hielo",
+    codigo: "15",
+    nombre: "A Star is Born",
     destacada: true,
     srcImage:
-      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
-    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
-    categories: "infantil",
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
+    description: "Dirigida por Bradley Cooper y protagonizada por Lady Gaga, esta película narra la historia de amor entre un músico en decadencia y una talentosa cantante en ascenso.",
+    categories: "romantico",
     released: true,
-    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+    trailerLink: "https://www.youtube.com/watch?v=nSbzyEJ8X9E",
   },
+  {
+    codigo: "16",
+    nombre: "La La Land",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    description: "Una película musical romántica que sigue la relación entre un pianista de jazz y una aspirante a actriz en Los Ángeles.",
+    categories: "romantico",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=45s24h98iOc",
+  },
+  {
+    codigo: "17",
+    nombre: "To All the Boys I've Loved Before",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/hKHZhUbIyUAjcSrqJThFGYIR6kI.jpg",
+    description: "Una comedia romántica adolescente que sigue la vida amorosa de una joven cuando sus cartas secretas de amor son expuestas.",
+    categories: "romantico",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=555oiY9RWM4",
+  },
+  {
+    codigo: "18",
+    nombre: "The Fault in Our Stars",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ep7dF4QR4Mm39LI958V0XbwE0hK.jpg",
+    description: "Basada en la novela de John Green, esta película cuenta la historia de dos adolescentes con cáncer que se enamoran.",
+    categories: "romantico",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=9ItBvH5J6ss",
+  },
+  {
+    codigo: "19",
+    nombre: "Crazy Rich Asians",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
+    description: "Una comedia romántica que sigue a una mujer que viaja a Singapur para conocer a la familia adinerada de su novio.",
+    categories: "romantico",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=ZQ-YX-5bAs0",
+  },
+  {
+    codigo: "20",
+    nombre: "Crazy Rich Asians",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg",
+    description: "Una comedia romántica que sigue a una mujer que viaja a Singapur para conocer a la familia adinerada de su novio.",
+    categories: "romantico",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=X57WUfsRcio",
+  },
+  {
+    codigo: "21",
+    nombre: "John Wick",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/v1YEOdGptCyNxnc4mJSYNd4cE8E.jpg",
+    description: "Un exasesino a sueldo busca venganza después de que roben su auto y maten a su perro, la última conexión con su difunta esposa.",
+    categories: "accion",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=y3FzXBkCUAg"
+  },
+  {
+    codigo: "22",
+    nombre: "Mad Max: Fury Road",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
+    description: "En un mundo postapocalíptico, Max se une a Furiosa para escapar de un tirano y su ejército en una espectacular persecución a través del desierto.",
+    categories: "accion",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=hEJnMQG9ev8"
+  },
+  {
+    codigo: "23",
+    nombre: "Die Hard",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/yFihWxQcmqcaBR31QM6Y8gT6aYV.jpg",
+    description: "El oficial de policía John McClane se enfrenta a terroristas que toman como rehenes a un edificio de oficinas en Navidad.",
+    categories: "accion",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=gYWvwkXreaI"
+  },
+  {codigo: "24",
+  nombre: "Inception",
+  destacada: true,
+  srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+  description: "Dom Cobb es un ladrón de sueños que roba secretos del subconsciente de las personas mientras están en su estado de sueño profundo.",
+  categories: "accion",
+  released: true,
+  trailerLink: "https://www.youtube.com/watch?v=RV9L7ui9Cn8"},
+  {
+    codigo: "25",
+    nombre: "The Dark Knight",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    description: "Batman se enfrenta al Joker, un criminal psicótico que amenaza a Gotham City con el caos y la destrucción.",
+    categories: "accion",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=TQfATDZY5Y4"
+  }
+
 ];
 guardarPeliLocalStorage();
 
 function guardarPeliLocalStorage() {
   localStorage.setItem("arrayPeliculas", JSON.stringify(peliculas));
 }
-function crearCarrusel() {
+function crearCarrusel(){
   let carouselActivo = document.getElementById("carouselActive");
   let carousel = document.getElementById("carrusel");
   for (let i = 0; i < listaPeliculas.length; i++) {
@@ -197,12 +299,10 @@ function crearCarrusel() {
     }
   }
 }  
-
-
 function crearCarruselInfantil() {
   let carouselActivoInfantil = document.getElementById("carouselActiveInfantil");
   let carouselInfantil = document.getElementById("carruselInfantil");
-  let elementosAgregadosAlActivo = 0; // Variable para rastrear elementos agregados al carrusel activo
+  let elementosAgregadosAlActivo = 0;
   for (let i = 0; i < listaPeliculas.length; i++) {
     if (elementosAgregadosAlActivo < 5 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "infantil") {
       carouselActivoInfantil.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
@@ -210,7 +310,7 @@ function crearCarruselInfantil() {
             class="img-carrusel m-3"
             alt=${listaPeliculas[i].nombre}
           /></a>`;
-      elementosAgregadosAlActivo++; // Incrementa el contador
+      elementosAgregadosAlActivo++;
     } else if (listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "infantil") {
       carouselInfantil.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
             src=${listaPeliculas[i].srcImage}
@@ -221,9 +321,54 @@ function crearCarruselInfantil() {
   }
 }
 
+function crearCarruselRomantico() {
+  let carouselActivoRomantico = document.getElementById("carouselActiveRomantico");
+  let carouselRomantico = document.getElementById("carruselRomantico");
+  let elementosAgregadosAlActivo = 0; // Variable para rastrear elementos agregados al carrusel y
+  for (let i = 0; i < listaPeliculas.length; i++) {
+    if (elementosAgregadosAlActivo < 5 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "romantico") {
+      carouselActivoRomantico.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
+            src=${listaPeliculas[i].srcImage}
+            class="img-carrusel m-3"
+            alt=${listaPeliculas[i].nombre}
+          /></a>`;
+      elementosAgregadosAlActivo++;
+    } else if (listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "romantico") {
+      carouselRomantico.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
+            src=${listaPeliculas[i].srcImage}
+            class="img-carrusel m-3"
+            alt=${listaPeliculas[i].nombre}
+          /></a>`;
+    }
+  }
+}
+
+function crearCarruselAccion() {
+  let carouselActivoAccion = document.getElementById("carouselActiveAccion");
+  let carouselAccion = document.getElementById("carruselAccion");
+  let elementosAgregadosAlActivo = 0; // Variable para rastrear elementos agregados al carrusel y
+  for (let i = 0; i < listaPeliculas.length; i++) {
+    if (elementosAgregadosAlActivo < 5 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "accion") {
+      carouselActivoAccion.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
+            src=${listaPeliculas[i].srcImage}
+            class="img-carrusel m-3"
+            alt=${listaPeliculas[i].nombre}
+          /></a>`;
+      elementosAgregadosAlActivo++;
+    } else if (listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "accion") {
+      carouselAccion.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
+            src=${listaPeliculas[i].srcImage}
+            class="img-carrusel m-3"
+            alt=${listaPeliculas[i].nombre}
+          /></a>`;
+    }
+  }
+}
 
 crearCarrusel(); 
 crearCarruselInfantil();
+crearCarruselRomantico();
+crearCarruselAccion()
 
 
 
