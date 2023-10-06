@@ -1,6 +1,7 @@
 /*{height: 60px; border: 1px black solid;}
 */
 /*navBar*/
+header{background-color: purple;}
 body{background-color: purple;}
 #logoBox{height:80%; width: 200px;}
 #mainLogo{object-fit: scale-down; height: 100%; width: 100%;}
