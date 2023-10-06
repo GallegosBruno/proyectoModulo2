@@ -69,7 +69,7 @@ const peliculas = [
       "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/32Tb6HZc8yAWqHesMSMnMozr6pi.jpg",
     description:
       "Producida por Walt Disney Television Animation, basada en la película de Disney de 1989 del mismo nombre. La serie narra las aventuras de Ariel como una sirena antes de los eventos de la película. Esta serie es la primera serie de televisión de Disney que se desprende de una película animada importante.",
-    categories: "infantil",
+    categories:"infantil",
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=ZGZX5-PAwR8"
   },
@@ -97,32 +97,88 @@ const peliculas = [
   },
   {
     codigo: "09",
-    nombre: "Advengers",
+    nombre: "Interstellar",
     destacada: true,
     srcImage:
-      "https://es.web.img3.acsta.net/c_310_420/pictures/17/01/25/13/52/576358.jpg",
-    description: "super héroes",
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+    description: "La aventura de un grupo de exploradores que utilizan un agujero de gusano recién descubierto para superar las limitaciones del viaje espacial humano y conquistar las vastas distancias involucradas en un viaje interestelar.",
     categories: "ficcion",
     released: true,
-    trailerLink: "https://www.youtube.com/watch?v=PyakRSni-c0",
+    trailerLink: "https://www.youtube.com/watch?v=UoSSbmD9vqc",
   },
   {
     codigo: "10",
-    nombre: "Advengers",
+    nombre: "Buscando a Nemo",
     destacada: true,
     srcImage:
-      "https://es.web.img3.acsta.net/c_310_420/pictures/17/01/25/13/52/576358.jpg",
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
     description: "super héroes",
-    categories: "ficcion",
+    categories: "infantil",
     released: true,
-    trailerLink: "https://www.youtube.com/watch?v=PyakRSni-c0",
+    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+  },
+  {
+    codigo: "11",
+    nombre: "La era del hielo",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
+    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+    categories: "infantil",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+  },
+  {
+    codigo: "12",
+    nombre: "La era del hielo",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
+    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+    categories: "infantil",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+  },
+  {
+    codigo: "13",
+    nombre: "La era del hielo",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
+    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+    categories: "infantil",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+  },
+  {
+    codigo: "12",
+    nombre: "La era del hielo",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
+    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+    categories: "infantil",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+  },
+  {
+    codigo: "13",
+    nombre: "La era del hielo",
+    destacada: true,
+    srcImage:
+      "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ggQ6o8X5984OCh3kZi2UIJQJY5y.jpg",
+    description: "Nemo, un joven pez payaso aventurero, es llevado inesperadamente desde su hogar en el Gran Arrecife de Coral hasta el acuario de la consulta de un dentista. Dependerá de su preocupado padre, Marlin, y de un simpático pero olvidadizo pez llamado Dory, llevar a Nemo de vuelta a casa.",
+    categories: "infantil",
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=SPHfeNgogVs",
   },
 ];
+guardarPeliLocalStorage();
 
 function guardarPeliLocalStorage() {
   localStorage.setItem("arrayPeliculas", JSON.stringify(peliculas));
 }
-  function crearCarrusel() {
+function crearCarrusel() {
   let carouselActivo = document.getElementById("carouselActive");
   let carousel = document.getElementById("carrusel");
   for (let i = 0; i < listaPeliculas.length; i++) {
@@ -140,8 +196,35 @@ function guardarPeliLocalStorage() {
           /></a>`;
     }
   }
-} 
-crearCarrusel();
+}  
 
 
-guardarPeliLocalStorage();
+function crearCarruselInfantil() {
+  let carouselActivoInfantil = document.getElementById("carouselActiveInfantil");
+  let carouselInfantil = document.getElementById("carruselInfantil");
+  let elementosAgregadosAlActivo = 0; // Variable para rastrear elementos agregados al carrusel activo
+  for (let i = 0; i < listaPeliculas.length; i++) {
+    if (elementosAgregadosAlActivo < 5 && listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "infantil") {
+      carouselActivoInfantil.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
+            src=${listaPeliculas[i].srcImage}
+            class="img-carrusel m-3"
+            alt=${listaPeliculas[i].nombre}
+          /></a>`;
+      elementosAgregadosAlActivo++; // Incrementa el contador
+    } else if (listaPeliculas[i].released && listaPeliculas[i].categories.toLowerCase() === "infantil") {
+      carouselInfantil.innerHTML += `<a href="./pages/detallePelicula.html#${listaPeliculas[i].codigo}"><img
+            src=${listaPeliculas[i].srcImage}
+            class="img-carrusel m-3"
+            alt=${listaPeliculas[i].nombre}
+          /></a>`;
+    }
+  }
+}
+
+
+crearCarrusel(); 
+crearCarruselInfantil();
+
+
+
+

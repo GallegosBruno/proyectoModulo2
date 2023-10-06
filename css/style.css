@@ -44,7 +44,12 @@ header{height: 60px; border: 1px black solid;}
 /* tamaño imagenes carrusel */
 
 .img-carrusel{
-    width:15%
+    width:13vw
+}
+@media (max-width: 767px) {
+    .img-carrusel{
+        width:20vw
+    }  
 }
 
 .btn-reproducir{
