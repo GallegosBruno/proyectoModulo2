@@ -32,12 +32,6 @@ header{height: 60px;}
 /*Footer*/
 #imgFooterContainer{height:60px}
 
-/* Detalle de Pelicula */
-.bg-violeta{
-    background: rgb(93,41,129);
-    background: linear-gradient(90deg, rgba(93,41,129,1) 0%, rgba(153,20,177,1) 50%);
-}
-
 /* tamaño imagenes carrusel */
 
 .img-carrusel{
@@ -64,6 +58,9 @@ header{height: 60px;}
 .btn-reproducir{
 background: #9a35ef ;
 color: aliceblue;
+}
+.btn-reproducir:hover{
+    background: #392855;;
 }
 .btn-reproducir a{
     text-decoration: none;
@@ -92,3 +89,8 @@ color: aliceblue;
     right: 100px;
     z-index: 3;
   }
+  /* Agrego de nuevo este fondo de error404 porque todavia no lo uni */
+  .bg-degradeNegro{
+    background: rgb(23,2,40);
+background: radial-gradient(circle, rgba(23,2,40,0.969625350140056) 0%, rgba(56,4,85,1) 100%);
+}
