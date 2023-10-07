@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+      name="author"
+      content="Rocio Hernandez, Lucas Gallastegui, Sofia, Bruno y Agustina Mena"
+    />
+    <meta name="description" content="Pagina Web con catalogo de peliculas"/>
+    <meta
+      name="keywords"
+      content="Html, Css, javascript, Vanilla js, Boostrap"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0b39408f88.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rolling Movies+</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div
+        class="container d-flex align-items-center h-100 justify-content-between"
+      >
+        <div id="logoBox" class="text-center d-flex">
+          <img
+            src="/proyectoModulo2/assets/logoRollingMovie.png"
+            id="mainLogo"
+            class="align-self-center"
+          />
+        </div>
+        <div id="buttonPanel">
+          <a
+            href="/proyectoModulo2/index.html"
+            class="botonNavbar text-white fs-5"
+            >LOGIN</a
+          >
+          <a href="#" class="botonNavbar text-white fs-5">REGISTRO</a>
+          <a href="#" class="botonNavbar text-white fs-5">INICIO</a>
+          <a href="#" class="botonNavbarOculto">qcyo</a>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid bg-degradeNegro">
+      <section class="p-5 text-white">
+        <article class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                <div class="d-flex justify-content-center">
+                  <img
+                    src="../assets/logoRollingMovie.png"
+                    alt="logo"
+                    class="w-75 pb-5"
+                  />
+                </div>
+                <p class="letraError">404</p>
+                <p class="fs-4 fw-bold">Error</p>
+                <p class="fs-4 pb-4 fw-bold text-danger">Página no encontrada</p>
+              </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <img
+              src="../assets/error.png"
+              class="img-fluid w-75 ps-5 pt-4"
+              alt="error404"
+            />
+          </div>
+       
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="container-fluid bg-secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-sm-12 d-flex justify-content-center">
+              <div id="imgFooterContainer">
+                <img
+                  src="./assets/logoRollingMovie.png"
+                  alt="logo RollingMovie"
+                  class="py-3 w-100 h-100 object-fit-fill"
+                />
+              </div>
+            </div>
+            <div class="col-lg-8 fs-6 text-center align-self-center col-sm-12">
+              &#169;RollingMovie+ Derechos Reservados
+            </div>
+            <div
+              class="col-lg-2 text-center d-flex align-items-center col-sm-12 d-flex justify-content-center mt-lg-0 mt-2"
+            >
+              <i class="fab fa-facebook-square fa-3x mx-1"></i>
+              <i class="fab fab fa-instagram-square fa-3x mx-1"></i>
+              <i class="fab fab fa-twitter-square fa-3x mx-1"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/detallePelicula.js"></script>
+  </body>
+</html>
