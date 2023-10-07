@@ -94,3 +94,12 @@ color: aliceblue;
     background: rgb(23,2,40);
 background: radial-gradient(circle, rgba(23,2,40,0.969625350140056) 0%, rgba(56,4,85,1) 100%);
 }
+
+footer a{
+  text-decoration: none;
+  color: rgb(54, 49, 49);
+}
+footer a:hover{
+  color:white
+
+}
