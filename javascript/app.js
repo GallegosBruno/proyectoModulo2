@@ -345,6 +345,6 @@ function cargarCarruseles() {
 }
 
 cargarCarruseles();
-
+console.log("app.js loaded")
 
 

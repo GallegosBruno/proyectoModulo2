@@ -18,7 +18,7 @@ class Pelicula {
     }
 }
 
-const peliculas = [
+/*const peliculas = [
     new Pelicula(1, "Movie 1", "Description 1", "image1.jpg", ["category 1", "category 2"], true, "trailer1"),
     new Pelicula(2, "Movie 2", "Description 2", "image2.jpg", ["category 2", "category 3"], false, "trailer2"),
     new Pelicula(3, "Movie 3", "Description 3", "image3.jpg", ["category 1", "category 3"], true, "trailer3"),
@@ -29,7 +29,7 @@ const peliculas = [
     new Pelicula(8, "Movie 8", "Description 8", "image8.jpg", ["category 1", "category 2"], false, "trailer8"),
     new Pelicula(9, "Movie 9", "Description 9", "image9.jpg", ["category 3"], true, "trailer9"),
     new Pelicula(10, "Movie 10", "Description 10", "image10.jpg", ["category 1", "category 2", "category 3"], false, "trailer10"),
-];
+]**/
 
 let peliculaDestacada = new Pelicula(12356,"Transformes","Em la nuva de transforme todo muere pibe","./assets/Posters de peliculas/pel5.jpg","Accion aventura",true,"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 );
