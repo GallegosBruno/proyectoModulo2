@@ -22,7 +22,7 @@
   <title>Rolling Movies+</title>
 </head>
 <body>
-  <header class="position-fixed top-0 start-0 z-3 w-100 px-2">
+  <header class="z-3 w-100 px-2">
     <nav class="container d-flex align-items-center h-100 justify-content-between navbar navbar-dark navbar-expand-md z-3">
       <div id="logoBox" class="text-center  d-flex">
           <img src="./assets/logoRollingMovie.png" id="mainLogo" class="align-self-center"></img>
@@ -48,9 +48,9 @@
         </div>
         <div id="searchBarBox" class="collapse navbar-collapse align-self-end ms-1">
           <input type="search" name="searchMovie" id="searchMovie" placeholder="Buscar" aria-describedby="Buscar" class="w-100">
-          <div class="p-2" onclick=buscar(searchMovie)>
+          <a href="./pages/resultadoBusqueda.html" class="p-2 rounded-2 text-decoration-none" id="searchIcon" onclick=buscar(searchMovie) onmousedown="searchIconPressed()" onmouseup="searchIconReleased()">
               &#x1F50D
-          </div>
+          </a>
         </div>
       </div>
     </nav>
@@ -67,7 +67,7 @@
           <h1 id="tituloBanner" class="z-1 w-100 text-center text-white"></h1>
           <h2 id="descripcionBanner" class="w-75 text-center text-white-50 align-self-center fs-5 z-1"></h2>
       </div>
-  </section>
+    </section>
     <section class="bg-degradeNegro">
       <article>
         <div id="carouselAccion" class="carousel slide">
