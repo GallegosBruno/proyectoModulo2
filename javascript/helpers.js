@@ -24,18 +24,13 @@ export const validarMail = (input) => {
   }
 };
 
-export const validacionGral = (campoAsunto, campoDescripcion, campoMail) => {
-  if (
-    campoRequerido(campoMail) &&
-    campoRequerido(campoDescripcion) &&
-    campoRequerido(campoAsunto)
-  ) {
-  }
-};
-
 
 export function sumarioValidaciones (campoMail,campoAsunto,campoDescripcion){
   let mensaje ='';
+  if(!validarMail(campoMail))
+  {
+    mensaje +='El mail debe ser del formato nombre@ejmplo.com <br>'
+  }
   if(!campoRequerido(campoMail,5,50)){
     console.log('campoMail')
     mensaje += 'El mail debe contener entre 5 y 50 caracteres <br>';
@@ -45,10 +40,6 @@ export function sumarioValidaciones (campoMail,campoAsunto,campoDescripcion){
   }
   if(!campoRequerido(campoDescripcion,10,1000)){
     mensaje+='La descripcion debe contener entre 10 y 1000 caracteres <br>'
-  }
-  if(!validarMail(campoMail))
-  {
-    mensaje +='Debe completar el campo "correo electronico" <br> El mail debe contener @ y . seguido de com, ar etc'
   }
   if(mensaje.length!==0){
     return mensaje;

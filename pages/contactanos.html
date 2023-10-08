@@ -12,7 +12,7 @@
     <header></header>
     <main class="container">
       <h1>contactanos</h1>
-      <form id="formMail">
+      <form action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668" method="POST" id="formMail">
           <div class="mb-3">
             <label for="mail" class="form-label"
               >Correo electronico</label
@@ -21,8 +21,8 @@
               type="email"
               class="form-control"
               id="mail"
+              name="Email"
               placeholder="nombre@ejemplo.com"
-              required patrón="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
               maxlength="50"
               minlength="5"
             />
@@ -34,6 +34,7 @@
             >
             <input
             type="text"
+            name="Asunto"
               class="form-control"
               id="asunto"
               maxlength="50"
@@ -46,6 +47,7 @@
             >
             <textarea
               class="form-control"
+              name="Descripcion"
               id="descripcion"
               rows="4"
               minlength="10"
@@ -63,5 +65,5 @@
     <footer></footer>
   </body>
   <script src="../javascript/bootstrap.bundle.min.js"></script>
-  <script src="../javascript/aboutUs.js" type="module"></script>
+  <script src="../javascript/contact.jS" type="module"></script>
 </html>
