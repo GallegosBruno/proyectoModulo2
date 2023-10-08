@@ -44,17 +44,17 @@
       </nav>
     </header>
     <main class="container">
-      <h1>contactanos</h1>
-      <form action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668" method="POST" id="formMail">
+      <h2 class="text-white">Contactanos</h2>
+      <form action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668" method="POST" id="formMail" class="text-white">
         <div class="mb-3">
           <label for="nombre" class="form-label"
-            >Correo electronico</label
+            >Nombre y apellido</label
           >
           <input
             type="text"
             class="form-control"
             id="nombre"
-            placeholder="nombre y apellido"
+            placeholder="Nombre y Apellido"
             maxlength="50"
             minlength="3"
           />
@@ -101,6 +101,8 @@
             ></textarea>
             <button type="submit" class="btn btn-primary mt-3">ENVIAR</button>
           </div>
+          <input type="hidden"name='_next' value="http://127.0.0.1:5500/pages/contactanos.html">
+          <input type="hidden" name="_captcha" value="false">
       </form>
       <div
                   class="alert alert-danger mt-3 d-none"
