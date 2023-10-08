@@ -3,8 +3,8 @@ import {sumarioValidaciones,campoRequerido, validarMail} from "./helpers.js";
 let campoMail = document.getElementById("mail");
 let campoAsunto = document.getElementById("asunto");
 let campoDescripcion = document.getElementById("descripcion");
-let enviarMail = document.getElementById("formMail");
-const msjFormulario = document.getElementById('msjFormulario')
+let msjFormulario = document.getElementById('msjFormulario')
+const formMail = document.getElementById('') 
 
 campoMail.addEventListener("blur", () => {
     console.log("desde mail");
