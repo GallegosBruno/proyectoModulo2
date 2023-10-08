@@ -61,11 +61,27 @@ header{height: 60px;}
         color: aliceblue;
       }
 }
+/* efecto galeria imagenes */
+
+.efectoFoto:hover{
+  position: relative;
+  top: 2px;
+  right: 2px;
+  filter: sepia(60%);
+  box-shadow: 5px 5px 18px rgb(46, 35, 63);
+}
+
 
 .btn-reproducir{
 background: #9a35ef ;
 color: aliceblue;
 }
+.btn-reproducir:hover{
+  background:  #392855;
+  color: aliceblue;
+  }
+  
+
 .btn-reproducir a{
     text-decoration: none;
     color: aliceblue
