@@ -12,7 +12,7 @@
     <header></header>
     <main class="container">
       <h1>contactanos</h1>
-      <form>
+      <form id="formMail">
           <div class="mb-3">
             <label for="mail" class="form-label"
               >Correo electronico</label
@@ -26,6 +26,7 @@
               maxlength="50"
               minlength="5"
             />
+            
           </div>
           <div class="mb-3">
             <label for="asunto" class="form-label"
@@ -53,9 +54,14 @@
             <button type="submit" class="btn btn-primary mt-3">ENVIAR</button>
           </div>
       </form>
+      <div
+                  class="alert alert-danger mt-3 d-none"
+                  role="alert"
+                  id="msjFormulario"
+                ></div>
     </main>
     <footer></footer>
   </body>
   <script src="../javascript/bootstrap.bundle.min.js"></script>
-  <script src="../javascript/helpers.js" type="module"></script>
+  <script src="../javascript/aboutUs.js" type="module"></script>
 </html>
