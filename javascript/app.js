@@ -221,14 +221,14 @@ function cargarPeliculasPorCategoria(categoria, elementoActivo, elementoCarrusel
     ) {
       elementoActivo.innerHTML += `
         <a href="./pages/detallePelicula.html#${pelicula.codigo}">
-          <img src="${pelicula.srcImage}" class="img-carrusel m-3" alt="${pelicula.nombre}" />
+          <img src="${pelicula.srcImage}" class="img-carrusel efectoFoto m-3" alt="${pelicula.nombre}" />
         </a>
       `;
       elementosAgregadosAlActivo++;
     } else if (pelicula.released && pelicula.categories.some((cat) => cat.toLowerCase() === categoria.toLowerCase())) {
       elementoCarrusel.innerHTML += `
         <a href="./pages/detallePelicula.html#${pelicula.codigo}">
-          <img src="${pelicula.srcImage}" class="img-carrusel m-3" alt="${pelicula.nombre}" />
+          <img src="${pelicula.srcImage}" class="img-carrusel efectoFoto m-3" alt="${pelicula.nombre}" />
         </a>
       `;
     }
