@@ -17,22 +17,22 @@ const buscar=(movieOrCategory)=>{
 function cargarCarouselResultados(elementoActivo, elementoCarrusel) {
     let elementosAgregadosAlActivo = 0;
     document.getElementById("tituloBusqueda").innerText= JSON.parse(localStorage.getItem("valorBusqueda"))
-  
+    let resultadoBusqueda=JSON.parse(localStorage.getItem("resultadoBusqueda"))
     for (let i = 0; i < resultadoBusqueda.length; i++) {
       const pelicula = resultadoBusqueda[i];
   
       if (elementosAgregadosAlActivo < 5) {
         elementoActivo.innerHTML += `
-          <a href="./pages/detallePelicula.html#${pelicula.codigo}">
-            <img src="${pelicula.srcImage}" class="img-carrusel m-3" alt="${pelicula.nombre}" />
-          </a>
+        <a href="./pages/detallePelicula.html#${pelicula.codigo}" class="aSinDecoracion">
+          <img src="${pelicula.srcImage}" class="img-carrusel efectoFoto" alt="${pelicula.nombre}" />
+        </a>
         `;
         elementosAgregadosAlActivo++;
-      } else if (pelicula.released && pelicula.categories.some((cat) => cat.toLowerCase() === categoria.toLowerCase())) {
+      } else{
         elementoCarrusel.innerHTML += `
-          <a href="./pages/detallePelicula.html#${pelicula.codigo}">
-            <img src="${pelicula.srcImage}" class="img-carrusel m-3" alt="${pelicula.nombre}" />
-          </a>
+        <a href="./pages/detallePelicula.html#${pelicula.codigo}" class="aSinDecoracion">
+          <img src="${pelicula.srcImage}" class="img-carrusel efectoFoto" alt="${pelicula.nombre}" />
+        </a>
         `;
       }
     }

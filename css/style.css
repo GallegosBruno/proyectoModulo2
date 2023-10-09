@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Fjalla+One & display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Fjalla+One & family= Roboto:ital,wght@1,900 & display=swap'); 
+@import url('https://fonts.googleapis.com/css2? family= Fjalla+One & family= Roboto:ital,wght@1,900 & display=swap');
 body {
   font-family:'Fjalla One';
   background: rgb(93, 41, 129);
@@ -15,7 +15,7 @@ header{background-color: purple;}
 #logoBox{height:80%; width: 200px;}
 #mainLogo{object-fit: scale-down; height: 100%; width: 100%;}
 header{height: 60px; border: 1px black solid;}
-.botonNavbar{width: min-content; text-decoration: none; padding: 0px 9px; color: white;}
+.botonNavbar{width: auto; text-decoration: none; padding: 0px 9px; color: white; white-space: nowrap;}
 .botonNavbar.collapse{border: 1px solid #ccc;}
 .botonNavbar:hover{color: goldenrod;}
 .botonNavbarOculto{display: none;}
