@@ -58,9 +58,13 @@ header{height: 60px; border: 1px black solid;}
   #descripcionBanner {
     font-size: 16px !important;
   }
+
 }
 
 /*Categorias*/
+.marginTopCarrusel{
+  margin-top: 650px;
+}
 .carouselCustom {
   display: flex;
   flex-wrap: nowrap;
@@ -85,7 +89,6 @@ header{height: 60px; border: 1px black solid;}
 
 /*Footer*/
 #imgFooterContainer {
-  height: 60px;
   max-width: 320px;
 }
 
@@ -101,28 +104,16 @@ header{height: 60px; border: 1px black solid;}
 
 /* tamaño imagenes carrusel */
 
-.img-carrusel {
-  width: 13vw;
+.img-carrusel{
+    width:13vw;
 }
+
 
 @media (max-width: 767px) {
-  .img-carrusel {
-    width: 20vw;
-  }
-  .btn-volver {
-    width: 50px;
-    height: 50px;
-    background: #9a35ef;
-    border-radius: 50%;
-    padding: 10px;
-    position: fixed;
-    top: 400px;
-    right: 40px;
-    z-index: 3;
-    color: aliceblue;
-  }
-}
-
+    .btn-volver {
+      display: none
+      }
+    }
 /* efecto galeria imagenes */
 
 .efectoFoto:hover{
@@ -139,8 +130,12 @@ header{height: 60px; border: 1px black solid;}
   color: aliceblue;
 }
 .btn-reproducir:hover{
-  background:  #392855;
+  background: #4a1079 ;
   color: aliceblue;
+  }
+  .btn-reproducir a{
+    text-decoration: none;
+    color: aliceblue;
   }
 
 .btn-volver {
@@ -183,8 +178,13 @@ footer a {
   text-decoration: none;
   color: rgb(54, 49, 49);
 }
-footer a:hover {
-  color: white;
+footer a:hover{
+  color:white
+
+}
+
+.aSinDecoracion{
+  text-decoration: none;
 }
 
 
