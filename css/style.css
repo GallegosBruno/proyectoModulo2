@@ -42,12 +42,11 @@ header{height: 60px;}
 /* tamaño imagenes carrusel */
 
 .img-carrusel{
-    width:13vw
+    width:13vw;
 }
+
+
 @media (max-width: 767px) {
-    .img-carrusel{
-        width:20vw
-    }  
     .btn-volver {
         width: 50px;
         height: 50px;
@@ -61,6 +60,7 @@ header{height: 60px;}
         color: aliceblue;
       }
 }
+
 /* efecto galeria imagenes */
 
 .efectoFoto:hover{
@@ -77,7 +77,7 @@ background: #9a35ef ;
 color: aliceblue;
 }
 .btn-reproducir:hover{
-  background:  #392855;
+  background: #4a1079 ;
   color: aliceblue;
   }
   
@@ -126,4 +126,8 @@ footer a{
 footer a:hover{
   color:white
 
+}
+
+.aSinDecoracion{
+  text-decoration: none;
 }
