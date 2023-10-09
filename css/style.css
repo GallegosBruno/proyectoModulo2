@@ -171,7 +171,6 @@ header{height: 60px; border: 1px black solid;}
     rgba(23, 2, 40, 0.969625350140056) 0%,
     rgba(56, 4, 85, 1) 100%
   );
-  margin-top: 650px;
 }
 .letraError {
   font-family: "Pixelify Sans", "cursive";
