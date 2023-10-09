@@ -55,7 +55,8 @@ header{height: 60px; border: 1px black solid;}
   #descripcionBanner {
     font-size: 16px !important;
   }
-
+ 
+  
 }
 
 /*Categorias*/
@@ -85,9 +86,9 @@ header{height: 60px; border: 1px black solid;}
 }
 
 /*Footer*/
-#imgFooterContainer {
+/* #imgFooterContainer {
   max-width: 320px;
-}
+} */
 
 /* Detalle de Pelicula */
 .bg-violeta {
@@ -104,11 +105,16 @@ header{height: 60px; border: 1px black solid;}
 .img-carrusel{
     width:13vw;
 }
-
+.logoFooter{
+  width: 20vw
+}
 
 @media (max-width: 767px) {
     .btn-volver {
       display: none
+      }
+      .logoFooter{
+        width: 30vw
       }
     }
 /* efecto galeria imagenes */
