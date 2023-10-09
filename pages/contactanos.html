@@ -13,7 +13,7 @@
     <header class="z-3 w-100 px-2">
       <nav class="container d-flex align-items-center h-100 justify-content-between navbar navbar-dark navbar-expand-md z-3">
         <div id="logoBox" class="text-center  d-flex">
-            <img src="./assets/logoRollingMovie.png" id="mainLogo" class="align-self-center"></img>
+            <img src="../assets/logoRollingMovie.png" id="mainLogo" class="align-self-center"></img>
         </div>
         <div id="navBarRightSide" class="d-flex">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#buttonPanel"><span class="navbar-toggler-icon"></span></button>
@@ -44,71 +44,81 @@
       </nav>
     </header>
     <main class="container">
-      <h2 class="text-white">Contactanos</h2>
-      <form action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668" method="POST" id="formMail" class="text-white">
-        <div class="mb-3">
-          <label for="nombre" class="form-label"
-            >Nombre y apellido</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="nombre"
-            placeholder="Nombre y Apellido"
-            maxlength="50"
-            minlength="3"
-          />
+      <section class="row mt-3">
+        <div class="col-lg-6 col-sm-12 text-white">
+          <h2 class="fw-bold">Bienvenido a RollingMovie</h2>
+            <p>Estamos encantados de ayudarte y responder a tus preguntas. <br>Si tienes comentarios, sugerencias o necesitas asistencia, no dudes en ponerte en contacto con nosotros.</p>
+          <p>Estamos disponibles las 24 horas, los 7 días de la semana.  <br>Tu opinión es importante para nosotros.</p>
         </div>
-          <div class="mb-3">
-            <label for="mail" class="form-label"
-              >Correo electronico</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="mail"
-              name="Email"
-              placeholder="nombre@ejemplo.com"
-              maxlength="50"
-              minlength="5"
-            />
-            
-          </div>
-          <div class="mb-3">
-            <label for="asunto" class="form-label"
-              >Asunto</label
-            >
-            <input
-            type="text"
-            name="Asunto"
-              class="form-control"
-              id="asunto"
-              maxlength="50"
-              minlength="5"
-            ></input>
-          </div>
-          <div class="mb-3">
-            <label for="descripcion" class="form-label"
-              >Descripcion</label
-            >
-            <textarea
-              class="form-control"
-              name="Descripcion"
-              id="descripcion"
-              rows="4"
-              minlength="10"
-              maxlength="1000"
-            ></textarea>
-            <button type="submit" class="btn btn-primary mt-3">ENVIAR</button>
-          </div>
-          <input type="hidden"name='_next' value="http://127.0.0.1:5500/pages/contactanos.html">
-          <input type="hidden" name="_captcha" value="false">
-      </form>
-      <div
-                  class="alert alert-danger mt-3 d-none"
-                  role="alert"
-                  id="msjFormulario"
-                ></div>
+        <div class="col-lg-6 col-sm-12" id="containerForm">
+          <form action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668" method="POST" id="formMail" class="">
+            <h2 class="text-white">Contactanos</h2>
+            <div class="mb-3">
+              <label for="nombre" class="form-label"
+                >Nombre y apellido</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Nombre y Apellido"
+                maxlength="50"
+                minlength="3"
+              />
+            </div>
+              <div class="mb-3">
+                <label for="mail" class="form-label"
+                  >Correo electronico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="mail"
+                  name="Email"
+                  placeholder="nombre@ejemplo.com"
+                  maxlength="50"
+                  minlength="5"
+                />
+                
+              </div>
+              <div class="mb-3">
+                <label for="asunto" class="form-label"
+                  >Asunto</label
+                >
+                <input
+                type="text"
+                name="Asunto"
+                  class="form-control"
+                  id="asunto"
+                  maxlength="50"
+                  minlength="5"
+                ></input>
+              </div>
+              <div class="mb-3">
+                <label for="descripcion" class="form-label"
+                  >Descripcion</label
+                >
+                <textarea
+                  class="form-control"
+                  name="Descripcion"
+                  id="descripcion"
+                  rows="4"
+                  minlength="10"
+                  maxlength="1000"
+                ></textarea>
+                <button type="submit" class="btn btn-enviar mt-3">ENVIAR</button>
+              </div>
+              <input type="hidden"name='_next' value="http://127.0.0.1:5500/pages/contactanos.html">
+              <input type="hidden" name="_captcha" value="false">
+          </form>
+          <div
+                      class="alert alert-danger mt-3 d-none"
+                      role="alert"
+                      id="msjFormulario"
+                    ></div>
+        </div>
+
+      </section>
     </main>
     <footer class="bg-violeta">
           <div class="container">
