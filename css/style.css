@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2? family= Fjalla+One & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Fjalla+One & family= Roboto:ital,wght@1,900 & display=swap');
 body {
+  font-family:'Fjalla One';
   background: rgb(93, 41, 129);
   display: flex;
   flex-direction: column;
@@ -12,7 +15,7 @@ header{background-color: purple;}
 #logoBox{height:80%; width: 200px;}
 #mainLogo{object-fit: scale-down; height: 100%; width: 100%;}
 header{height: 60px; border: 1px black solid;}
-.botonNavbar{width: min-content; text-decoration: none; padding: 0px 9px; color: white;}
+.botonNavbar{width: auto; text-decoration: none; padding: 0px 9px; color: white; white-space: nowrap;}
 .botonNavbar.collapse{border: 1px solid #ccc;}
 .botonNavbar:hover{color: goldenrod;}
 .botonNavbarOculto{display: none;}
@@ -55,9 +58,14 @@ header{height: 60px; border: 1px black solid;}
   #descripcionBanner {
     font-size: 16px !important;
   }
+ 
+  
 }
 
 /*Categorias*/
+.marginTopCarrusel{
+  margin-top: 650px;
+}
 .carouselCustom {
   display: flex;
   flex-wrap: nowrap;
@@ -81,10 +89,9 @@ header{height: 60px; border: 1px black solid;}
 }
 
 /*Footer*/
-#imgFooterContainer {
-  height: 60px;
+/* #imgFooterContainer {
   max-width: 320px;
-}
+} */
 
 /* Detalle de Pelicula */
 .bg-violeta {
@@ -98,28 +105,21 @@ header{height: 60px; border: 1px black solid;}
 
 /* tamaño imagenes carrusel */
 
-.img-carrusel {
-  width: 13vw;
+.img-carrusel{
+    width:13vw;
+}
+.logoFooter{
+  width: 20vw
 }
 
 @media (max-width: 767px) {
-  .img-carrusel {
-    width: 20vw;
-  }
-  .btn-volver {
-    width: 50px;
-    height: 50px;
-    background: #9a35ef;
-    border-radius: 50%;
-    padding: 10px;
-    position: fixed;
-    top: 400px;
-    right: 40px;
-    z-index: 3;
-    color: aliceblue;
-  }
-}
-
+    .btn-volver {
+      display: none
+      }
+      .logoFooter{
+        width: 30vw
+      }
+    }
 /* efecto galeria imagenes */
 
 .efectoFoto:hover{
@@ -136,8 +136,12 @@ header{height: 60px; border: 1px black solid;}
   color: aliceblue;
 }
 .btn-reproducir:hover{
-  background:  #392855;
+  background: #4a1079 ;
   color: aliceblue;
+  }
+  .btn-reproducir a{
+    text-decoration: none;
+    color: aliceblue;
   }
 
 .btn-volver {
@@ -180,6 +184,38 @@ footer a {
   text-decoration: none;
   color: rgb(54, 49, 49);
 }
-footer a:hover {
+footer a:hover{
+  color:white
+
+}
+
+.aSinDecoracion{
+  text-decoration: none;
+}
+
+
+/* Formulario de registro */
+
+#containerForm{
+   background-image: url(https://img.freepik.com/vector-gratis/patrones-fisuras-elementos-cine_225004-1154.jpg?w=826&t=st=1696797063~exp=1696797663~hmac=a3db6e7bcd3d5fce7cdf31a62dd8a0414171ab1cd97c82d71b29d0ded8077d0a);
+  color: rgb(248, 5, 183);
+  font-weight: 900;
+}
+.btn-enviar{
+  background:rgb(248, 5, 183);
+}
+.btn-enviar:hover{
+  background: #000;
   color: white;
+}
+
+/* SOBRE NOSOTROS */
+#sectionAboutUs{
+  color: white;
+}
+#sectionAboutUs p{
+  font-size: x-large;
+}
+#sectionAboutUs article div h2{
+  font-size: xx-large;
 }
