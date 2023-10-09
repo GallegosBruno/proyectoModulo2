@@ -35,9 +35,6 @@ header{height: 60px; border: 1px black solid;}
 #searchBarBox.collapse.show #searchMovie{width: 80%;}
 #searchBarBox.collapse.show #searchIcon{width: auto; background-color: white; border-radius: 10px;}
 
-
-
-
 /*Banner destacado*/
 #mainBannerBox {
   width: 100%;
@@ -83,11 +80,6 @@ header{height: 60px; border: 1px black solid;}
   color: white;
 }
 
-/*Footer*/
-#imgFooterContainer {
-  height: 60px;
-  max-width: 320px;
-}
 /*Footer*/
 #imgFooterContainer {
   height: 60px;
@@ -179,6 +171,7 @@ header{height: 60px; border: 1px black solid;}
     rgba(23, 2, 40, 0.969625350140056) 0%,
     rgba(56, 4, 85, 1) 100%
   );
+  margin-top: 650px;
 }
 .letraError {
   font-family: "Pixelify Sans", "cursive";
