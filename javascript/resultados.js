@@ -1,5 +1,5 @@
 let resultadoBusqueda = JSON.parse(localStorage.getItem('resultadoBusqueda'));
-console.log(resultadoBusqueda)
+
 let listaPeliculas=JSON.parse(localStorage.getItem("arrayPeliculas"))
 
 const buscar=(movieOrCategory)=>{ 
@@ -39,14 +39,10 @@ function cargarCarouselResultados(elementoActivo, elementoCarrusel) {
   }
   cargarCarouselResultados(document.getElementById("carouselActiveAccion"), document.getElementById("carruselAccion"));
 
-
-
-/*for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i); // Get the key at the current index
-    const value = localStorage.getItem(key); // Get the value associated with the key
-  
-    console.log(`Key: ${key}, Value: ${value}`);
-  }
-console.log("damn")
-/*let peliculasData=localStorage.getItem[peliculas]
-console.log(peliculasData)*/
+/*Me olvide que existia css*/
+const searchIconPressed=()=>{
+  document.getElementById("searchIcon").style.backgroundColor="violet"
+}
+const searchIconReleased=()=>{
+  document.getElementById("searchIcon").style.backgroundColor="purple"
+}

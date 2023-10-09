@@ -10,7 +10,7 @@ class Pelicula {
     {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.poster = srcImage;
+        this.srcImage = srcImage;
         this.description = description;
         this.categories = categories;
         this.released = released;
@@ -18,26 +18,21 @@ class Pelicula {
     }
 }
 
-/*const peliculas = [
-    new Pelicula(1, "Movie 1", "Description 1", "image1.jpg", ["category 1", "category 2"], true, "trailer1"),
-    new Pelicula(2, "Movie 2", "Description 2", "image2.jpg", ["category 2", "category 3"], false, "trailer2"),
-    new Pelicula(3, "Movie 3", "Description 3", "image3.jpg", ["category 1", "category 3"], true, "trailer3"),
-    new Pelicula(4, "Movie 4", "Description 4", "image4.jpg", ["category 2"], false, "trailer4"),
-    new Pelicula(5, "Batman", "Description 5", "image5.jpg", ["category 3"], true, "trailer5"),
-    new Pelicula(6, "Movie 6", "Description 6", "image6.jpg", ["category 1"], false, "trailer6"),
-    new Pelicula(7, "Movie 7", "Description 7", "image7.jpg", ["category 2", "category 3"], true, "trailer7"),
-    new Pelicula(8, "Movie 8", "Description 8", "image8.jpg", ["category 1", "category 2"], false, "trailer8"),
-    new Pelicula(9, "Movie 9", "Description 9", "image9.jpg", ["category 3"], true, "trailer9"),
-    new Pelicula(10, "Movie 10", "Description 10", "image10.jpg", ["category 1", "category 2", "category 3"], false, "trailer10"),
-]**/
-
-let peliculaDestacada = new Pelicula(12356,"Transformes","Em la nuva de transforme todo muere pibe","./assets/Posters de peliculas/pel5.jpg","Accion aventura",true,"https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-);
+let peliculaDestacada = {
+    codigo: "03",
+    nombre: "Star Wars",
+    destacada: true,
+    srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
+    description: "La historia se desarrolla entre los Episodios III y IV de Star Wars, durante el dominio opresivo del Imperio Galáctico en un planeta ocupado. Un variado grupo de rebeldes a bordo de la nave estelar Ghost se enfrenta al Imperio, enfrentando desafíos y luchando por la libertad.",
+    categories: ["ficcion", "espacial"], // Additional category "espacial"
+    released: true,
+    trailerLink: "https://www.youtube.com/watch?v=sGbxmsDFVnE",
+}
 
 /*Funciones de pagina principal*/
 /*AÑADIR AL ARCHIVO DE JAVA COMUN Y BORRAR LO DE ARRIBA*/
 const setBanner = () => {
-    document.getElementById("mainBannerImg").src = peliculaDestacada.poster;
+    document.getElementById("mainBannerImg").src = peliculaDestacada.srcImage;
     document.getElementById("tituloBanner").innerText = peliculaDestacada.nombre;
     document.getElementById("descripcionBanner").innerText = peliculaDestacada.description;
     document.getElementById("trailerLink").href = peliculaDestacada.link;
