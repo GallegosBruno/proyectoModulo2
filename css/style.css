@@ -202,3 +202,14 @@ footer a:hover{
   background: #000;
   color: white;
 }
+
+/* SOBRE NOSOTROS */
+#sectionAboutUs{
+  color: white;
+}
+#sectionAboutUs p{
+  font-size: x-large;
+}
+#sectionAboutUs article div h2{
+  font-size: xx-large;
+}
