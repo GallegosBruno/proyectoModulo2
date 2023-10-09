@@ -58,6 +58,9 @@ header{height: 60px; border: 1px black solid;}
 }
 
 /*Categorias*/
+.marginTopCarrusel{
+  margin-top: 650px;
+}
 .carouselCustom {
   display: flex;
   flex-wrap: nowrap;
