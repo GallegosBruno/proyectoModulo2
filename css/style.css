@@ -214,3 +214,9 @@ footer a:hover {
 #sectionAboutUs{
   color: white;
 }
+#sectionAboutUs p{
+  font-size: x-large;
+}
+#sectionAboutUs article div h2{
+  font-size: xx-large;
+}
