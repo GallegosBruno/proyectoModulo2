@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap");
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  background-color: purple;
+}
+
+.fondologin {
+  background: url("../assets/thumb-1920-215354.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.detalleslog2 {
+  background-color: rgb(54, 28, 56);
+  color: white;
+}
+
+.detalleslog3 {
+  background-color: black;
+}
+
+.ov-btn-grow-skew {
+  background: #410d51;
+  color: white;
+  border: 2px solid white;
+  padding: 16px 100px;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.ov-btn-grow-skew:hover {
+  color: white;
+}
+
+.ov-btn-grow-skew::after {
+  content: "";
+  background: #1c1534;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+
+.ov-btn-grow-skew:hover::after {
+  transition: all 0.3s ease-out;
+  transform: skewX(-45deg) scale(1, 1);
+}
+
+.imgpro {
+  height: 100px;
+}
