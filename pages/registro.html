@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/registro.css" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,34 +20,84 @@
     <title>Registro</title>
   </head>
   <header class="z-3 w-100 px-2">
-    <nav class="container-fluid d-flex flex-nowrap align-items-center h-100 justify-content-between navbar navbar-dark navbar-expand-md z-3">
-      <a href="./index.html" id="logoBox" class="text-center  d-flex ms-lg-5 ms-sm-0">
-          <img src="../assets/logoRollingMovie.png" id="mainLogo" class="align-self-center"></img>
+    <nav
+      class="container-fluid d-flex flex-nowrap align-items-center h-100 justify-content-between navbar navbar-dark navbar-expand-md z-3"
+    >
+      <a
+        href="./index.html"
+        id="logoBox"
+        class="text-center d-flex ms-lg-5 ms-sm-0"
+      >
+        <img
+          src="../assets/logoRollingMovie.png"
+          id="mainLogo"
+          class="align-self-center"
+        />
       </a>
       <div id="navBarRightSide" class="d-flex">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#buttonPanel"><span class="navbar-toggler-icon"></span></button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchBarBox"><span class="fa fas fa-search"></span></button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#buttonPanel"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#searchBarBox"
+        >
+          <span class="fa fas fa-search"></span>
+        </button>
         <div id="buttonPanel" class="collapse navbar-collapse w-100">
           <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="./login.html" class="nav-link botonNavbar fs-5">LOGIN</a>
+              <a href="./login.html" class="nav-link botonNavbar fs-5">LOGIN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active botonNavbar fs-5" aria-current="page" href="./registro.html">REGISTRO</a>
+              <a
+                class="nav-link active botonNavbar fs-5"
+                aria-current="page"
+                href="./registro.html"
+                >REGISTRO</a
+              >
             </li>
             <li class="nav-item">
-                <a href="../index.html" class="nav-link botonNavbar fs-5">INICIO</a>
+              <a href="../index.html" class="nav-link botonNavbar fs-5"
+                >INICIO</a
+              >
             </li>
             <li class="nav-item">
-                <a href="../index.html" class="nav-link botonNavbarOculto">qcyo</a>
+              <a href="../index.html" class="nav-link botonNavbarOculto"
+                >qcyo</a
+              >
             </li>
           </ul>
         </div>
-        <div id="searchBarBox" class="collapse navbar-collapse align-self-end ms-lg-1 m-0 w-100">
+        <div
+          id="searchBarBox"
+          class="collapse navbar-collapse align-self-end ms-lg-1 m-0 w-100"
+        >
           <div class="d-flex justify-content-center">
-            <input type="search" name="searchMovie" id="searchMovie" placeholder="Buscar" aria-describedby="Buscar">
-            <a href="./pages/resultadoBusqueda.html" class="p-2 rounded-2 text-decoration-none" id="searchIcon" onclick="buscar(searchMovie)" onmousedown="searchIconPressed()" onmouseup="searchIconReleased()">
-                &#x1F50D
+            <input
+              type="search"
+              name="searchMovie"
+              id="searchMovie"
+              placeholder="Buscar"
+              aria-describedby="Buscar"
+            />
+            <a
+              href="./pages/resultadoBusqueda.html"
+              class="p-2 rounded-2 text-decoration-none"
+              id="searchIcon"
+              onclick="buscar(searchMovie)"
+              onmousedown="searchIconPressed()"
+              onmouseup="searchIconReleased()"
+            >
+              <!--                 &#x1F50D
+ -->
             </a>
           </div>
         </div>
@@ -57,29 +107,61 @@
   <body class="fondologin">
     <main class="container mb-2">
       <div class="row">
-        <div class="col-12 col-md-6 offset-md-3 mt-5">
-          <div class="card mt-5">
+        <div class="col-12 col-md-6 offset-md-2">
+          <div class="card mt-2">
             <div class="card-body detalleslog2 opacity-80">
               <h3 class="card-title text-center p-4">Registrarse</h3>
-              <form id="formulario">
+              <form
+                action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668"
+                method="POST"
+                id="formMail"
+              >
                 <label class="fw-bold">Nombre</label>
-                <input type="text" class="form-control mb-2" id="name" />
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="name"
+                  maxlength="15"
+                  name="Nombre"
+                  required
+                />
                 <label class="fw-bold">Apellido</label>
-                <input type="text" class="form-control mb-2" id="lastname" />
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="lastname"
+                  maxlength="15"
+                />
                 <label class="fw-bold">Correo electronico</label>
                 <input
                   type="text"
                   class="form-control mb-2"
-                  id="exampleInputEmail1"
+                  id="exampleInputEmail"
+                  name="correo electronico"
+                  maxlength="30"
                 />
+                <div class="invalid-feedback">
+                  Asegúrese de seguir el formato de correo electrónico correcto.
+                </div>
                 <label class="fw-bold">Contraseña</label>
-                <input type="password" class="form-control" id="password" />
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="contraseña"
+                  maxlength="15"
+                />
                 <label class="fw-bold">Repetir contraseña</label>
                 <input
-                  type="text"
+                  type="password"
                   class="form-control mb-2"
-                  id="exampleInputEmail1"
+                  id="repeatPassword"
+                  name="contraseña-repetida"
+                  maxlength="15"
                 />
+                <div class="invalid-feedback">
+                  Las contraseñas deben coincidir
+                </div>
                 <div class="mb-3 form-check ms-3 col-md-11">
                   <input
                     type="checkbox"
@@ -100,7 +182,7 @@
         </div>
       </div>
     </main>
-    <footer class="flex-shrink-0 w-100 ">
+    <footer class="flex-shrink-0 w-100">
       <div class="container-fluid bg-secondary pt-3">
         <div class="container">
           <div class="row">
@@ -137,7 +219,7 @@
       </div>
     </footer>
     <script src="../javascript/bootstrap.bundle.min.js"></script>
-    <script src="../javascript/registro.js"></script>
+    <script src="../javascript/registro.js" type="module"></script>
     <script src="https://use.fontawesome.com/c2813ccf5b.js"></script>
   </body>
 </html>
