@@ -243,3 +243,27 @@ function cargarCarruseles() {
 }
 
 cargarCarruseles();
+
+/*Barra de busqueda*/
+
+const buscar=(movieOrCategory)=>{ 
+  let busqueda=movieOrCategory.value.trim()
+  let peliculas=JSON.parse(localStorage.getItem("arrayPeliculas"))
+
+  let arrayEncontrado1=peliculas.filter(pelicula=>pelicula.nombre.toLowerCase().includes(busqueda.toLowerCase()))
+  let arrayEncontrado2=(peliculas.filter(pelicula=>pelicula.categories.some(categoria=>categoria.toLowerCase().includes(busqueda.toLowerCase()))))
+  let arrayFinal=arrayEncontrado1.concat(arrayEncontrado2)
+  
+  localStorage.setItem("resultadoBusqueda",JSON.stringify(arrayFinal))
+  localStorage.setItem("valorBusqueda",JSON.stringify(busqueda))
+  /*arrayFinal.forEach(pelicula => {
+      console.log(pelicula.nombre);
+  });*/
+}
+/*Me olvide que existia css*/
+const searchIconPressed=()=>{
+  document.getElementById("searchIcon").style.backgroundColor="violet"
+}
+const searchIconReleased=()=>{
+  document.getElementById("searchIcon").style.backgroundColor="purple"
+}
