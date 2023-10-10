@@ -88,6 +88,17 @@ header{height: 60px; border: 1px black solid;}
 }
 
 /*Footer*/
+@media (min-width: 991px) {
+  #footerContactanos{
+    position:absolute;
+  }
+}
+@media (max-width: 991px) {
+  #footerContactanos{
+    position:static;
+    margin-top: 10px;
+  }
+}
 /* #imgFooterContainer {
   max-width: 320px;
 } */
