@@ -22,7 +22,20 @@ campoNombre.addEventListener("blur", () => {
   campoContraseña.addEventListener("blur", () => {
     campoRequerido(campoContraseña, 1, 15);
   });
-  
   campoRepetirContraseña.addEventListener("blur", () => {
-    campoRequerido(campoRepetirContraseña, 1, 15);
+    repetirContraseña();
   });
+ 
+/* falta validar que repetir contraseña sea igual a contraseña */
+function repetirContraseña() {
+    const contraseña = campoContraseña.value;
+    const repetirContraseñaValor = campoRepetirContraseña.value;
+  
+    if (contraseña === repetirContraseñaValor) {
+      campoRepetirContraseña.className = "form-control is-valid";
+      return true;
+    } else {
+      campoRepetirContraseña.className = "form-control is-invalid";
+      return false;
+    }
+  }
