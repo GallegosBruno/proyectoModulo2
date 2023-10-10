@@ -1,12 +1,14 @@
-import { campoRequerido } from "./helpers.js";
+import { campoRequerido, validarMail} from "./helpers.js";
+
 let campoEmail = document.getElementById("email")
 let campoConstraseña = document.getElementById("password")
 
 
 campoEmail.addEventListener("blur", () => {
   console.log("desde blur");
-  campoRequerido(campoEmail, 1, 30);
-});
+  validarMail(campoEmail)});
+
+
 campoConstraseña.addEventListener("blur", () => {
   console.log("desde blur");
   campoRequerido(campoConstraseña, 1, 15);
@@ -26,7 +28,7 @@ const logIn = (event) => {
 
   if (correo === admin.correo && password === admin.password) {
       localStorage.setItem("user", JSON.stringify(correo));
-      location.replace("./admin.js");// poner bien con la ruta de ADMIN
+      location.replace("../index.html");// poner bien con la ruta de ADMIN
   } else {
 
     Swal.fire({
