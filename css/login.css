@@ -8,6 +8,7 @@ body {
   background-color: purple;
 }
 
+
 .fondologin {
   background: url("../assets/thumb-1920-215354.jpg");
   width: 100vw;
@@ -15,6 +16,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 .detalleslog2 {

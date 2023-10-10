@@ -26,7 +26,7 @@ campoNombre.addEventListener("blur", () => {
     repetirContraseña();
   });
  
-/* falta validar que repetir contraseña sea igual a contraseña */
+
 function repetirContraseña() {
     const contraseña = campoContraseña.value;
     const repetirContraseñaValor = campoRepetirContraseña.value;
@@ -39,3 +39,4 @@ function repetirContraseña() {
       return false;
     }
   }
+

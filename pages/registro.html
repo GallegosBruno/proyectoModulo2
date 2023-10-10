@@ -107,47 +107,60 @@
   <body class="fondologin">
     <main class="container mb-2">
       <div class="row">
-        <div class="col-12 col-md-6 offset-md-3">
+        <div class="col-12 col-md-6 offset-md-2">
           <div class="card mt-2">
             <div class="card-body detalleslog2 opacity-80">
               <h3 class="card-title text-center p-4">Registrarse</h3>
-              <form action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668" method="POST" id="formMail">
+              <form
+                action="https://formsubmit.co/a88fdc8e835cef3b1f9a46ce73770668"
+                method="POST"
+                id="formMail"
+              >
                 <label class="fw-bold">Nombre</label>
                 <input
                   type="text"
                   class="form-control mb-2"
                   id="name"
                   maxlength="15"
+                  name="Nombre"
                   required
                 />
                 <label class="fw-bold">Apellido</label>
-                <input type="text" class="form-control mb-2" id="lastname"                   maxlength="15"
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  id="lastname"
+                  maxlength="15"
                 />
                 <label class="fw-bold">Correo electronico</label>
                 <input
                   type="text"
-                  class="form-control  mb-2"
+                  class="form-control mb-2"
                   id="exampleInputEmail"
+                  name="correo electronico"
                   maxlength="30"
-
-
                 />
                 <div class="invalid-feedback">
                   Asegúrese de seguir el formato de correo electrónico correcto.
                 </div>
                 <label class="fw-bold">Contraseña</label>
-                <input type="password" class="form-control" id="password"                   maxlength="15"
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="contraseña"
+                  maxlength="15"
                 />
                 <label class="fw-bold">Repetir contraseña</label>
                 <input
                   type="password"
                   class="form-control mb-2"
                   id="repeatPassword"
+                  name="contraseña-repetida"
                   maxlength="15"
-
                 />
                 <div class="invalid-feedback">
-                Las contraseñas deben coincidir
+                  Las contraseñas deben coincidir
                 </div>
                 <div class="mb-3 form-check ms-3 col-md-11">
                   <input
