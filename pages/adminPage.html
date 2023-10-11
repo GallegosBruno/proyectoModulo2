@@ -60,70 +60,86 @@
       </div>
     </nav>
   </header>
-  <main class="container-fluid bg-degradeNegro text-white">
+  <main class="container-fluid bg-degradeNegro">
     <section class="my-5 container">
     <h1 class="display-3 text-center text-white pt-4">
       Administrar Peliculas
     </h1>
     <hr />
-    <button id="openModalButton" class="btn btn-primary" data-toggle="modal" data-target="#addMovieModal">
-      Agregar Película/Serie
-  </button>
-  <div class="modal fade" id="addMovieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Agregar Película/Serie</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
+           <form id="formProductos">
               <div class="form-group">
-                <label for="movieId">ID:</label>
-                <input type="text" id="movieId" class="form-control" placeholder="ID de la película/serie">
+                <label for="codigo">Codigo:</label>
+                <input type="text" id="codigo" class="form-control" placeholder="ID de la película/serie" maxlength="5"
+                required>
+                <div class="invalid-feedback">
+                  debe ingresar un codigo alfanumerico
+                </div>
             </div>
               <div class="form-group">
-                  <label for="movieName">Nombre:</label>
-                  <input type="text" id="movieName" class="form-control" placeholder="Nombre de la película/serie">
+                  <label for="producto">Nombre:</label>
+                  <input type="text" id="pelicula" class="form-control" placeholder="Nombre de la película/serie" maxlength="20"
+                  required>
               </div>
               <div class="form-group">
                   <label for="movieCategory">Categoría:</label>
-                  <input type="text" id="movieCategory" class="form-control" placeholder="Categoría">
+                  <input type="text" id="movieCategory" class="form-control" placeholder="Categoría" maxlength="10"
+                  required>
               </div>
               <div class="form-group">
-                  <label for="movieDescription">Descripción:</label>
-                  <textarea id="movieDescription" class="form-control" placeholder="Descripción"></textarea>
+                  <label for="description">Descripción:</label>
+                  <textarea id="description" class="form-control" placeholder="Descripción" rows="3"
+                  required></textarea>
               </div>
+              <div class="form-group">
+                <label for="srcImage">URL image:</label>
+                <textarea id="srcImage" class="form-control" placeholder="https//www" rows="3"
+                required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="trailerLink">Link del trailer:</label>
+              <textarea id="trailerLink" class="form-control" placeholder="https//www." rows="3"
+              required></textarea>
+          </div>
               <div class="form-group">
                   <label for="movieFile">Adjuntar archivo:</label>
                   <input type="file" id="movieFile" class="form-control-file">
               </div>
               <div class="form-group">
-                  <label for="moviePublished">Publicado:</label>
-                  <input type="checkbox" id="moviePublished" class="form-check-input">
+                  <label for="released">Publicado:</label>
+                  <input type="checkbox" id="released" class="form-check-input" required>
               </div>
-          </div>
-            <div class="modal-footer">
+              
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button id="saveMovie" class="btn btn-primary">Guardar</button>
-            </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+           </form>
         </div>
     </div>
 </div>
     </section>
-<table class="table">
-  <thead>
+    <section class="container">
+      <h2 class="display-3 text-center text-white">
+        Tabla de productos
+      </h2>
+  <div class="table my-5 pb-5">
+   <table class="table">
+    <thead>
       <tr>
-          <th>ID</th>
-          <th>Nombre</th>
-          <th>Categoría</th>
-          <th>Descripción</th>
-          <th>Publicado</th>
-          <th>Acciones</th>
+        <th scope="col">Pelicula</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">URL Imagen</th>
+        <th scope="col">Publicada</th>
+
+        <th scope="col">Link del trailer</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
       </tr>
   </thead>
-</table>
+    <tbody id="tablaProductos">
+
+    </tbody>
+   </table>
+  </div>
+</section>
   </main>
   <footer class="bottom-0 w-100">
     <div class="container-fluid bg-secondary">
