@@ -23,14 +23,14 @@ function cargarCarouselResultados(elementoActivo, elementoCarrusel) {
   
       if (elementosAgregadosAlActivo < 5) {
         elementoActivo.innerHTML += `
-        <a href="./pages/detallePelicula.html#${pelicula.codigo}" class="aSinDecoracion">
+        <a href="detallePelicula.html#${pelicula.codigo}" class="aSinDecoracion">
           <img src="${pelicula.srcImage}" class="img-carrusel efectoFoto" alt="${pelicula.nombre}" />
         </a>
         `;
         elementosAgregadosAlActivo++;
       } else{
         elementoCarrusel.innerHTML += `
-        <a href="./pages/detallePelicula.html#${pelicula.codigo}" class="aSinDecoracion">
+        <a href="detallePelicula.html#${pelicula.codigo}" class="aSinDecoracion">
           <img src="${pelicula.srcImage}" class="img-carrusel efectoFoto" alt="${pelicula.nombre}" />
         </a>
         `;
