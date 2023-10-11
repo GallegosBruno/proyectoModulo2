@@ -20,12 +20,14 @@ header{height: 60px;}
 .botonNavbar.collapse{border: 1px solid #ccc;}
 .botonNavbar:hover{color: goldenrod;}
 .botonNavbarOculto{display: none;}
-#buttonPanel{flex-grow: 0; background-color: purple; transition: none;}
+#buttonPanel{flex-grow: 0; background-color: purple; transition: none;width: 100%;}
 #buttonPanel.collapse.show{
   position: absolute;
   width: 100%;
   top: 100%;
   left: 0%;
+  margin-left: 0px;
+  padding-left: 0px;
   z-index: 3;
 }
 #searchBarBox{transition: none;}
@@ -88,6 +90,17 @@ header{height: 60px;}
 }
 
 /*Footer*/
+@media (min-width: 991px) {
+  #footerContactanos{
+    position:absolute;
+  }
+}
+@media (max-width: 991px) {
+  #footerContactanos{
+    position:static;
+    margin-top: 10px;
+  }
+}
 /* #imgFooterContainer {
   max-width: 320px;
 } */
@@ -218,3 +231,5 @@ footer a:hover{
 #sectionAboutUs article div h2{
   font-size: xx-large;
 }
+/*Pagina resultados*/
+/*#mainPaginaResultados{position: absolute; top: 50; left: 50;}
