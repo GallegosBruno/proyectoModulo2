@@ -57,7 +57,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/32Tb6HZc8yAWqHesMSMnMozr6pi.jpg",
     description: "Producida por Walt Disney Television Animation, basada en la película de Disney de 1989 del mismo nombre. La serie narra las aventuras de Ariel como una sirena antes de los eventos de la película. Esta serie es la primera serie de televisión de Disney que se desprende de una película animada importante.",
-    categories: ["infantil", "animada"], // Additional category "animada"
+    categories: ["infantil", "animada", "romantico"], // Additional category "animada"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=ZGZX5-PAwR8",
   },
@@ -127,7 +127,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/abW5AzHDaIK1n9C36VdAeOwORRA.jpg",
     description: "Un automóvil de carreras novato y ambicioso, descubre que la vida se trata del viaje, no de la línea de meta, cuando se encuentra inesperadamente desviado en la tranquila ciudad de Radiator Springs, ubicada en la histórica Ruta 66.",
-    categories: ["infantil", "animada"], // Additional category "animada"
+    categories: ["infantil", "animada", "accion"], // Additional category "animada"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=SbXIj2T-_uk&t=16s",
   },
@@ -157,7 +157,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
     description: "Una película musical romántica que sigue la relación entre un pianista de jazz y una aspirante a actriz en Los Ángeles.",
-    categories: ["romantico", "musical", "accion"], // Additional category "musical"
+    categories: ["romantico", "musical"], // Additional category "musical"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=45s24h98iOc",
   },
