@@ -17,7 +17,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
     description: "Producida por Walt Disney Television Animation, basada en la película de Disney de 1989 del mismo nombre. La serie narra las aventuras de Ariel como una sirena antes de los eventos de la película. Esta serie es la primera serie de televisión de Disney que se desprende de una película animada importante.",
-    categories: ["ficcion", "animada"], // Additional category "animada"
+    categories: ["Ficcion", "animada"], // Additional category "animada"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=OM0tSTEQCQA&pp=ygUOdHJhaWxlciBtYXRyaXg%3D",
   },
@@ -147,7 +147,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg",
     description: "Dirigida por Bradley Cooper y protagonizada por Lady Gaga, esta película narra la historia de amor entre un músico en decadencia y una talentosa cantante en ascenso.",
-    categories: ["romantico", "musical", "accion"], // Additional category "musical"
+    categories: ["romantico", "musical"], // Additional category "musical"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=nSbzyEJ8X9E",
   },
@@ -167,7 +167,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/hKHZhUbIyUAjcSrqJThFGYIR6kI.jpg",
     description: "Una comedia romántica adolescente que sigue la vida amorosa de una joven cuando sus cartas secretas de amor son expuestas.",
-    categories: ["romantico", "comedia", "accion"], // Additional category "comedia"
+    categories: ["romantico", "comedia"], // Additional category "comedia"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=555oiY9RWM4",
   },
@@ -177,7 +177,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/ep7dF4QR4Mm39LI958V0XbwE0hK.jpg",
     description: "Basada en la novela de John Green, esta película cuenta la historia de dos adolescentes con cáncer que se enamoran.",
-    categories: ["romantico", "drama", "accion"], // Additional category "drama"
+    categories: ["romantico", "drama"], // Additional category "drama"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=9ItBvH5J6ss",
   },
@@ -187,7 +187,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/1XxL4LJ5WHdrcYcihEZUCgNCpAW.jpg",
     description: "Una comedia romántica que sigue a una mujer que viaja a Singapur para conocer a la familia adinerada de su novio.",
-    categories: ["romantico", "comedia", "accion"], // Additional category "comedia"
+    categories: ["romantico", "comedia"], // Additional category "comedia"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=ZQ-YX-5bAs0",
   },
@@ -197,7 +197,7 @@ const peliculas = [
     destacada: true,
     srcImage: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/iKaKr8aUqOy1aojENu5XuwBI8Uj.jpg",
     description: "Un empresario adinerado contrata a una prostituta para que lo acompañe a eventos sociales, pero su relación se convierte en algo más.",
-    categories: ["romantico", "comedia", "accion"], // Additional category "comedia"
+    categories: ["romantico", "comedia"], // Additional category "comedia"
     released: true,
     trailerLink: "https://www.youtube.com/watch?v=Wzii8IuL8lk",
   }
