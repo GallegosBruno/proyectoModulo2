@@ -18,12 +18,8 @@ export const campoRequerido = (input, min, max) => {
 export const validarMail = (input) => {
   const validacion = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
   if (validacion.test(input.value) && input.value.trim().length > 0) {
-    input.className = "form-control is-valid";
-
     return true;
   } else {
-    input.className = "form-control is-invalid";
-
     return false;
   }
 };

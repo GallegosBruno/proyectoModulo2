@@ -33,7 +33,7 @@ const detallePelicula = () => {
                 <div class="col-sm-12 col-md-6 col-lg-6">
                   <div class="d-flex justify-content-center"> <img
                     src=${pelicula.srcImage}
-                    class="w-50"
+                    class="w-50 efectoFoto"
                   /></div>
 
                 </div>

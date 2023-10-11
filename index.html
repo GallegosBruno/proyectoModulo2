@@ -25,31 +25,27 @@
   <header class="z-3 w-100 px-2">
     <nav class="container-fluid d-flex flex-nowrap align-items-center h-100 justify-content-between navbar navbar-dark navbar-expand-md z-3">
       <a href="./index.html" id="logoBox" class="text-center  d-flex ms-lg-5 ms-sm-0">
-          <img src="./assets/logoRollingMovie.png" id="mainLogo" class="align-self-center">
+          <img src="./assets/logoRollingMovie.png" id="mainLogo" class="align-self-center"></img>
       </a>
       <div id="navBarRightSide" class="d-flex">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#buttonPanel"><span class="navbar-toggler-icon"></span></button>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchBarBox"><span class="fa fas fa-search"></span></button>
         <div id="buttonPanel" class="collapse navbar-collapse w-100">
           <ul class="navbar-nav">
-            <li>
+            <li class="nav-item">
                 <a href="./index.html" class="botonNavbar fs-5">INICIO</a>
             </li>
             <li>
                 <a href="./pages/aboutUs.html" class="botonNavbar fs-5">QUIENES SOMOS</a>
-
             </li>
             <li>
                 <a href="./pages/contactanos.html" class="botonNavbar fs-5">CONTACTANOS</a>
             </li>
             <li>
-              <a href="./pages/login.html" class="botonNavbar fs-5">LOGIN</a>
+              <a href="./index.html" class="botonNavbar fs-5">LOGIN</a>
             </li>
             <li>
-                <a href="./pages/registro.html" class="botonNavbar fs-5">REGISTRO</a>
-            </li>
-            <li>
-                <a href="/index.html" class="botonNavbarOculto">qcyo</a>
+                <a href="/pages/adminPage.html" class="botonNavbar fs-5">qcyo</a>
             </li>
           </ul>
         </div>
@@ -77,7 +73,8 @@
           <h2 id="descripcionBanner" class="w-75 text-center text-white-50 align-self-center fs-5 z-1"></h2>
       </div>
     </section>
-    <section class="bg-degradeNegro marginTopCarrusel pb-3">
+    <section class="bg-degradeNegro pb-3">
+      <article>
         <div id="carruselAccion" class="carousel slide">
           <div class="carousel-inner container text-center">
             <p class="lead fs-4 text-white fw-bold pt-2">Accion</p>
@@ -87,7 +84,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carruselAccion"
+            data-bs-target="#carouselAccion"
             data-bs-slide="prev"
           >
             <span
@@ -109,7 +106,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </article> -->
+      </article>
       <article>
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner container text-center">
@@ -133,39 +130,6 @@
             class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </article>
-      <article>
-        <div id="carouselAccion" class="carousel slide">
-          <div class="carousel-inner container text-center">
-            <p class="lead fs-4 text-white fw-bold pt-2">Accion</p>
-            <div class="carousel-item active" id="carouselActiveAccion"></div>
-            <div class="carousel-item" id="carruselAccion"></div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselAccion"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselAccion"
             data-bs-slide="next"
           >
             <span
@@ -255,10 +219,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-sm-12 d-flex justify-content-center">
-                    <div id="imgFooterContainer"><a href="./index.html"><img src="./assets/logoRollingMovie.png" alt="logo RollingMovie" class="py-3 logoFooter"></a></div>
-              <!-----
                     <div id="imgFooterContainer"><a href="../index.html"><img src="../assets/logoRollingMovie.png" alt="logo RollingMovie" class="py-3 w-100 h-100 object-fit-fill"></a></div>
-              --->
                 </div>
                 <div class="col-lg-8 fs-6 text-center align-self-center col-sm-12 lead fw-semibold"> &#169;RollingMovie+ Derechos Reservados</div>
                 <div class="col-lg-2 text-center d-flex align-items-center col-sm-12 d-flex justify-content-center mt-lg-0 mt-2 mb-2">
@@ -271,7 +232,7 @@
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/0b39408f88.js" crossorigin="anonymous"></script>
-  <script src="./javascript/bootstrap.bundle.min.js"></script>
+  <script src="/javascript/bootstrap.bundle.min.js"></script>
   <script src="./javascript/pruebaPaginaPrincipal.js"></script>
   <script src="./javascript/app.js"></script>
 </body>
