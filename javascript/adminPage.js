@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const description = movieDescriptionInput.value;
         const published = moviePublishedInput.checked;
 
-        if (name) {
+        if (id && name && category && description) {
             addMovieToTable(id, name, category, description, published);
             addMovieModal.hide();
         }
