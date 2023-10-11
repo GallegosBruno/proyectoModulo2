@@ -20,12 +20,14 @@ header{height: 60px; border: 1px black solid;}
 .botonNavbar.collapse{border: 1px solid #ccc;}
 .botonNavbar:hover{color: goldenrod;}
 .botonNavbarOculto{display: none;}
-#buttonPanel{flex-grow: 0; background-color: purple; transition: none;}
+#buttonPanel{flex-grow: 0; background-color: purple; transition: none;width: 100%;}
 #buttonPanel.collapse.show{
   position: absolute;
   width: 100%;
   top: 100%;
   left: 0%;
+  margin-left: 0px;
+  padding-left: 0px;
   z-index: 3;
 }
 #searchBarBox{transition: none;}
