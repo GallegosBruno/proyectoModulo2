@@ -213,5 +213,15 @@ footer a:hover{
 #sectionAboutUs article div h2{
   font-size: xx-large;
 }
+
+/* Admin Page */
+#openModalButton{
+  flex-grow: 0;
+  background-color: purple; 
+
+}
+#adminPage{
+  color: white;
+}
 /*Pagina resultados*/
 /*#mainPaginaResultados{position: absolute; top: 50; left: 50;}
